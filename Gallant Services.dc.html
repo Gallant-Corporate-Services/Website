@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services — Gallant Corporate Services</title>
+<meta name="description" content="Eight service lines covering the full event lifecycle — strategy, MICE, activations, logistics, manufacturing, sustainability, vendor management and financial reporting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FAF9F7;color:#111013;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+h1,h2,h3,p{margin:0}
+::selection{background:#111013;color:#FAF9F7}
+:focus-visible{outline:2px solid #111013;outline-offset:3px}
+[data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .75s cubic-bezier(.22,.61,.36,1),transform .75s cubic-bezier(.22,.61,.36,1)}
+[data-reveal="in"]{opacity:1;transform:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;animation-delay:0ms!important}[data-reveal]{opacity:1!important;transform:none!important}}
+</style>
+</helmet>
+
+<div data-screen-label="Services" style="position:relative;width:100%;overflow-x:clip">
+<dc-import name="SiteNav" active="services" hint-size="100%,76px"></dc-import>
+
+<header style="padding:clamp(150px,20vh,220px) clamp(18px,5vw,72px) 0;text-align:center">
+  <div style="max-width:1100px;margin:0 auto">
+    <div style="display:inline-flex;align-items:center;gap:12px;animation:fadeUp .7s ease both">
+      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79)"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#6F6D71">Services</span>
+      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#ED1E79,#F7941D)"></span>
+    </div>
+    <h1 style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:660;font-size:clamp(2.2rem,5.6vw,4.8rem);letter-spacing:-.022em;line-height:1.03;margin:clamp(20px,3vw,32px) auto 0;max-width:20ch;animation:fadeUp .8s ease both;animation-delay:.08s">The full event lifecycle. Or any single workstream.</h1>
+    <p style="font-size:clamp(16px,1.3vw,18px);line-height:1.75;color:#6F6D71;max-width:58ch;margin:clamp(22px,3vw,34px) auto 0;animation:fadeUp .9s ease both;animation-delay:.16s">From first concept to final report, our scope covers the full event lifecycle. Engage us for a single workstream or the complete production.</p>
+    <div style="margin:clamp(44px,6vw,72px) auto 0;border-top:1px solid #E3E1DD"></div>
+  </div>
+</header>
+
+<section style="padding:clamp(56px,7vw,90px) clamp(18px,5vw,72px) 0">
+  <div style="max-width:1000px;margin:0 auto">
+    <div data-reveal style="border-top:2px solid #111013">
+      <div data-service tabindex="0" role="button" aria-expanded="false" style="border-bottom:1px solid #E3E1DD;padding:clamp(22px,3vw,32px) 8px;cursor:pointer;display:grid;grid-template-columns:clamp(44px,6vw,80px) 1fr 40px;gap:clamp(12px,2vw,24px);align-items:start;transition:background .3s ease">
+        <span data-num style="font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,1.2vw,14px);color:#6F6D71;padding-top:9px;transition:color .3s ease">01</span>
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(20px,2.4vw,31px);letter-spacing:-.015em;line-height:1.15">Event strategy &amp; production</div>
+          <div data-desc style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><p style="font-size:16px;line-height:1.7;color:#6F6D71;max-width:62ch;margin:14px 0 4px">Concept development, programme design, run of show and end-to-end production management.</p></div>
+        </div>
+        <span data-plus style="font-family:'Archivo',sans-serif;font-weight:300;font-size:28px;color:#6F6D71;text-align:right;padding-top:2px;transition:transform .35s ease,color .35s ease;line-height:1">+</span>
+      </div>
+      <div data-service tabindex="0" role="button" aria-expanded="false" style="border-bottom:1px solid #E3E1DD;padding:clamp(22px,3vw,32px) 8px;cursor:pointer;display:grid;grid-template-columns:clamp(44px,6vw,80px) 1fr 40px;gap:clamp(12px,2vw,24px);align-items:start;transition:background .3s ease">
+        <span data-num style="font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,1.2vw,14px);color:#6F6D71;padding-top:9px;transition:color .3s ease">02</span>
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(20px,2.4vw,31px);letter-spacing:-.015em;line-height:1.15">MICE &amp; conference management</div>
+          <div data-desc style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><p style="font-size:16px;line-height:1.7;color:#6F6D71;max-width:62ch;margin:14px 0 4px">Meetings, incentives, conferences and exhibitions — including delegate registration, accreditation and protocol.</p></div>
+        </div>
+        <span data-plus style="font-family:'Archivo',sans-serif;font-weight:300;font-size:28px;color:#6F6D71;text-align:right;padding-top:2px;transition:transform .35s ease,color .35s ease;line-height:1">+</span>
+      </div>
+      <div data-service tabindex="0" role="button" aria-expanded="false" style="border-bottom:1px solid #E3E1DD;padding:clamp(22px,3vw,32px) 8px;cursor:pointer;display:grid;grid-template-columns:clamp(44px,6vw,80px) 1fr 40px;gap:clamp(12px,2vw,24px);align-items:start;transition:background .3s ease">
+        <span data-num style="font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,1.2vw,14px);color:#6F6D71;padding-top:9px;transition:color .3s ease">03</span>
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(20px,2.4vw,31px);letter-spacing:-.015em;line-height:1.15">Brand activations &amp; experiences</div>
+          <div data-desc style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><p style="font-size:16px;line-height:1.7;color:#6F6D71;max-width:62ch;margin:14px 0 4px">Product launches, brand activations and experiential campaigns designed for impact and recall.</p></div>
+        </div>
+        <span data-plus style="font-family:'Archivo',sans-serif;font-weight:300;font-size:28px;color:#6F6D71;text-align:right;padding-top:2px;transition:transform .35s ease,color .35s ease;line-height:1">+</span>
+      </div>
+      <div data-service tabindex="0" role="button" aria-expanded="false" style="border-bottom:1px solid #E3E1DD;padding:clamp(22px,3vw,32px) 8px;cursor:pointer;display:grid;grid-template-columns:clamp(44px,6vw,80px) 1fr 40px;gap:clamp(12px,2vw,24px);align-items:start;transition:background .3s ease">
+        <span data-num style="font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,1.2vw,14px);color:#6F6D71;padding-top:9px;transition:color .3s ease">04</span>
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(20px,2.4vw,31px);letter-spacing:-.015em;line-height:1.15">Logistics &amp; site operations</div>
+          <div data-desc style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><p style="font-size:16px;line-height:1.7;color:#6F6D71;max-width:62ch;margin:14px 0 4px">Fleet coordination, venue logistics and ground operations for multi-location and remote sites.</p></div>
+        </div>
+        <span data-plus style="font-family:'Archivo',sans-serif;font-weight:300;font-size:28px;color:#6F6D71;text-align:right;padding-top:2px;transition:transform .35s ease,color .35s ease;line-height:1">+</span>
+      </div>
+      <div data-service tabindex="0" role="button" aria-expanded="false" style="border-bottom:1px solid #E3E1DD;padding:clamp(22px,3vw,32px) 8px;cursor:pointer;display:grid;grid-template-columns:clamp(44px,6vw,80px) 1fr 40px;gap:clamp(12px,2vw,24px);align-items:start;transition:background .3s ease">
+        <span data-num style="font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,1.2vw,14px);color:#6F6D71;padding-top:9px;transition:color .3s ease">05</span>
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(20px,2.4vw,31px);letter-spacing:-.015em;line-height:1.15">Branded apparel, signage &amp; merchandise</div>
+          <div data-desc style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><p style="font-size:16px;line-height:1.7;color:#6F6D71;max-width:62ch;margin:14px 0 4px">In-house design and manufacture of event apparel, signage and corporate gifting through GBI.</p></div>
+        </div>
+        <span data-plus style="font-family:'Archivo',sans-serif;font-weight:300;font-size:28px;color:#6F6D71;text-align:right;padding-top:2px;transition:transform .35s ease,color .35s ease;line-height:1">+</span>
+      </div>
+      <div data-service tabindex="0" role="button" aria-expanded="false" style="border-bottom:1px solid #E3E1DD;padding:clamp(22px,3vw,32px) 8px;cursor:pointer;display:grid;grid-template-columns:clamp(44px,6vw,80px) 1fr 40px;gap:clamp(12px,2vw,24px);align-items:start;transition:background .3s ease">
+        <span data-num style="font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,1.2vw,14px);color:#1E5B3E;padding-top:9px;transition:color .3s ease">06</span>
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(20px,2.4vw,31px);letter-spacing:-.015em;line-height:1.15">Sustainable event solutions</div>
+          <div data-desc style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><p style="font-size:16px;line-height:1.7;color:#6F6D71;max-width:62ch;margin:14px 0 4px">Upcycled materials, delegate kits and eco-conscious décor through Gallant Loop Africa.</p></div>
+        </div>
+        <span data-plus style="font-family:'Archivo',sans-serif;font-weight:300;font-size:28px;color:#6F6D71;text-align:right;padding-top:2px;transition:transform .35s ease,color .35s ease;line-height:1">+</span>
+      </div>
+      <div data-service tabindex="0" role="button" aria-expanded="false" style="border-bottom:1px solid #E3E1DD;padding:clamp(22px,3vw,32px) 8px;cursor:pointer;display:grid;grid-template-columns:clamp(44px,6vw,80px) 1fr 40px;gap:clamp(12px,2vw,24px);align-items:start;transition:background .3s ease">
+        <span data-num style="font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,1.2vw,14px);color:#6F6D71;padding-top:9px;transition:color .3s ease">07</span>
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(20px,2.4vw,31px);letter-spacing:-.015em;line-height:1.15">Vendor &amp; supplier management</div>
+          <div data-desc style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><p style="font-size:16px;line-height:1.7;color:#6F6D71;max-width:62ch;margin:14px 0 4px">Sourcing, contracting and on-site management of catering, AV, staging and other suppliers.</p></div>
+        </div>
+        <span data-plus style="font-family:'Archivo',sans-serif;font-weight:300;font-size:28px;color:#6F6D71;text-align:right;padding-top:2px;transition:transform .35s ease,color .35s ease;line-height:1">+</span>
+      </div>
+      <div data-service tabindex="0" role="button" aria-expanded="false" style="border-bottom:1px solid #E3E1DD;padding:clamp(22px,3vw,32px) 8px;cursor:pointer;display:grid;grid-template-columns:clamp(44px,6vw,80px) 1fr 40px;gap:clamp(12px,2vw,24px);align-items:start;transition:background .3s ease">
+        <span data-num style="font-family:'IBM Plex Mono',monospace;font-size:clamp(12px,1.2vw,14px);color:#6F6D71;padding-top:9px;transition:color .3s ease">08</span>
+        <div>
+          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(20px,2.4vw,31px);letter-spacing:-.015em;line-height:1.15">Financial reporting &amp; compliance</div>
+          <div data-desc style="max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><p style="font-size:16px;line-height:1.7;color:#6F6D71;max-width:62ch;margin:14px 0 4px">Budgeting, payment tracking, supplier reconciliation and audit-ready closeout documentation.</p></div>
+        </div>
+        <span data-plus style="font-family:'Archivo',sans-serif;font-weight:300;font-size:28px;color:#6F6D71;text-align:right;padding-top:2px;transition:transform .35s ease,color .35s ease;line-height:1">+</span>
+      </div>
+    </div>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6F6D71;margin-top:20px;text-align:center">Select a service to expand</p>
+  </div>
+</section>
+
+<section style="padding:clamp(96px,13vw,160px) clamp(18px,5vw,72px)">
+  <div style="max-width:900px;margin:0 auto;text-align:center">
+    <div data-reveal style="display:inline-flex;align-items:center;gap:12px">
+      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79)"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#6F6D71">How we work</span>
+      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#ED1E79,#F7941D)"></span>
+    </div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:640;font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.02em;line-height:1.07;margin:clamp(18px,2.6vw,28px) auto 0;max-width:20ch">One engagement model, concept to closeout.</h2>
+    <div data-process data-reveal style="position:relative;margin-top:clamp(44px,6vw,64px);text-align:left">
+      <div style="position:absolute;left:11px;top:12px;bottom:12px;width:2px;background:#E3E1DD"></div>
+      <div data-process-fill style="position:absolute;left:11px;top:12px;width:2px;height:0;background:linear-gradient(180deg,#F7941D,#ED1E79)"></div>
+      <div style="position:relative;display:grid;grid-template-columns:24px 1fr;gap:clamp(20px,3vw,36px);padding-bottom:clamp(36px,5vw,52px)">
+        <div style="padding-top:6px"><span style="display:block;width:12px;height:12px;border-radius:50%;background:#FAF9F7;border:2px solid #111013;margin-left:3px"></span></div>
+        <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#6F6D71;text-transform:uppercase">Step 1</div><div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,2vw,26px);letter-spacing:-.012em;margin-top:8px">Scope &amp; strategy</div><p style="font-size:15.5px;line-height:1.7;color:#6F6D71;margin-top:10px;max-width:58ch">We define a clear scope, objectives and budget — aligned to either a procurement framework or a marketing brief.</p></div>
+      </div>
+      <div style="position:relative;display:grid;grid-template-columns:24px 1fr;gap:clamp(20px,3vw,36px);padding-bottom:clamp(36px,5vw,52px)">
+        <div style="padding-top:6px"><span style="display:block;width:12px;height:12px;border-radius:50%;background:#FAF9F7;border:2px solid #111013;margin-left:3px"></span></div>
+        <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#6F6D71;text-transform:uppercase">Step 2</div><div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,2vw,26px);letter-spacing:-.012em;margin-top:8px">Design &amp; production</div><p style="font-size:15.5px;line-height:1.7;color:#6F6D71;margin-top:10px;max-width:58ch">Programme design, run of show, and in-house manufacture of branding, apparel and signage through GBI.</p></div>
+      </div>
+      <div style="position:relative;display:grid;grid-template-columns:24px 1fr;gap:clamp(20px,3vw,36px);padding-bottom:clamp(36px,5vw,52px)">
+        <div style="padding-top:6px"><span style="display:block;width:12px;height:12px;border-radius:50%;background:#FAF9F7;border:2px solid #111013;margin-left:3px"></span></div>
+        <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#6F6D71;text-transform:uppercase">Step 3</div><div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,2vw,26px);letter-spacing:-.012em;margin-top:8px">Logistics &amp; mobilisation</div><p style="font-size:15.5px;line-height:1.7;color:#6F6D71;margin-top:10px;max-width:58ch">Fleet, venue and supplier coordination — including multi-location and remote-site operations.</p></div>
+      </div>
+      <div style="position:relative;display:grid;grid-template-columns:24px 1fr;gap:clamp(20px,3vw,36px);padding-bottom:clamp(36px,5vw,52px)">
+        <div style="padding-top:6px"><span style="display:block;width:12px;height:12px;border-radius:50%;background:#FAF9F7;border:2px solid #111013;margin-left:3px"></span></div>
+        <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#6F6D71;text-transform:uppercase">Step 4</div><div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,2vw,26px);letter-spacing:-.012em;margin-top:8px">On-site execution</div><p style="font-size:15.5px;line-height:1.7;color:#6F6D71;margin-top:10px;max-width:58ch">A dedicated production team runs the programme to plan, with protocol, accreditation and brand presence managed on the ground.</p></div>
+      </div>
+      <div style="position:relative;display:grid;grid-template-columns:24px 1fr;gap:clamp(20px,3vw,36px)">
+        <div style="padding-top:6px"><span style="display:block;width:12px;height:12px;border-radius:50%;background:#FAF9F7;border:2px solid #111013;margin-left:3px"></span></div>
+        <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#6F6D71;text-transform:uppercase">Step 5</div><div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,2vw,26px);letter-spacing:-.012em;margin-top:8px">Closeout &amp; reporting</div><p style="font-size:15.5px;line-height:1.7;color:#6F6D71;margin-top:10px;max-width:58ch">Audit-ready financial reconciliation and documentation that satisfies whoever signs off — plus GLA upcycling of post-event materials.</p></div>
+      </div>
+    </div>
+    <div data-reveal style="margin-top:clamp(40px,5vw,56px)">
+      <a href="Gallant Contact.dc.html" style="display:inline-block;position:relative;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:16px 34px;background:#111013;color:#FAF9F7;font-weight:500;transition:transform .3s ease" style-hover="transform:translateY(-2px)">Request a proposal →</a>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,560px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const reveals = document.querySelectorAll('[data-reveal]');
+    if (reduce) { reveals.forEach(e => e.setAttribute('data-reveal', 'in')); }
+    else {
+      const io = new IntersectionObserver((ents) => {
+        ents.forEach(en => { if (en.isIntersecting) { en.target.setAttribute('data-reveal', 'in'); io.unobserve(en.target); } });
+      }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+      reveals.forEach(e => io.observe(e));
+      setTimeout(() => reveals.forEach(e => { if (e.getAttribute('data-reveal') !== 'in') e.setAttribute('data-reveal', 'in'); }), 2600);
+    }
+    document.querySelectorAll('[data-service]').forEach(row => {
+      const desc = row.querySelector('[data-desc]');
+      const num = row.querySelector('[data-num]');
+      const plus = row.querySelector('[data-plus]');
+      let pinned = false;
+      const open = () => {
+        desc.style.maxHeight = desc.scrollHeight + 'px'; desc.style.opacity = '1';
+        row.style.background = '#FFFFFF';
+        num.style.color = '#ED1E79';
+        plus.style.transform = 'rotate(45deg)'; plus.style.color = '#ED1E79';
+        row.setAttribute('aria-expanded', 'true');
+      };
+      const close = () => {
+        desc.style.maxHeight = '0'; desc.style.opacity = '0';
+        row.style.background = 'transparent';
+        num.style.color = '#6F6D71';
+        plus.style.transform = 'none'; plus.style.color = '#6F6D71';
+        row.setAttribute('aria-expanded', 'false');
+      };
+      row.addEventListener('mouseenter', () => { if (!pinned) open(); });
+      row.addEventListener('mouseleave', () => { if (!pinned) close(); });
+      row.addEventListener('click', () => { pinned = !pinned; pinned ? open() : close(); });
+      row.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pinned = !pinned; pinned ? open() : close(); } });
+    });
+    const proc = document.querySelector('[data-process]');
+    const fill = document.querySelector('[data-process-fill]');
+    if (proc && fill && !reduce) {
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return; ticking = true;
+        requestAnimationFrame(() => {
+          const r = proc.getBoundingClientRect();
+          const vh = window.innerHeight;
+          const denom = r.height - vh * 0.3;
+          const frac = Math.max(0, Math.min(1, (vh * 0.55 - r.top) / (denom > 0 ? denom : r.height)));
+          fill.style.height = (frac * 100) + '%';
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      this._onScroll = onScroll; onScroll();
+    } else if (fill) { fill.style.height = '100%'; }
+  }
+  componentWillUnmount() { if (this._onScroll) window.removeEventListener('scroll', this._onScroll); }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
