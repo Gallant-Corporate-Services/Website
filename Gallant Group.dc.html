@@ -9,7 +9,7 @@
 <x-dc>
 <helmet data-dc-atomics>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Group — Gallant Corporate Services</title>
+<title>The Group, Gallant Corporate Services</title>
 <meta name="description" content="One group, three integrated capabilities: event production, in-house manufacturing (GBI) and circular economy (GLA).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +17,18 @@
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#FAF9F7;color:#111013;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:#F4F1EA url('assets/paper.png') repeat;color:#14120E;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:none}
 img{max-width:100%}
 h1,h2,h3,p{margin:0}
-::selection{background:#111013;color:#FAF9F7}
-:focus-visible{outline:2px solid #111013;outline-offset:3px}
-[data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .75s cubic-bezier(.22,.61,.36,1),transform .75s cubic-bezier(.22,.61,.36,1)}
+::selection{background:#14120E;color:#F4F1EA}
+:focus-visible{outline:2px solid #14120E;outline-offset:3px}
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
 [data-reveal="in"]{opacity:1;transform:none}
-@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-@media(max-width:880px){[data-caps]{grid-template-columns:1fr!important}[data-two]{grid-template-columns:1fr!important}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes lineGrow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){[data-two]{grid-template-columns:1fr!important}[data-struct]{grid-template-columns:1fr!important}[data-struct] [data-conn]{display:none!important}}
 @media(max-width:680px){[data-stats]{grid-template-columns:1fr 1fr!important;row-gap:36px!important}}
 @media(max-width:360px){[data-stats]{grid-template-columns:1fr!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;animation-delay:0ms!important}[data-reveal]{opacity:1!important;transform:none!important}}
@@ -34,119 +36,94 @@ h1,h2,h3,p{margin:0}
 </helmet>
 
 <div data-screen-label="Group" style="position:relative;width:100%;overflow-x:clip">
-<dc-import name="SiteNav" active="group" hint-size="100%,76px"></dc-import>
+<dc-import name="SiteNav" active="group" hint-size="100%,78px"></dc-import>
 
-<header style="padding:clamp(150px,20vh,220px) clamp(18px,5vw,72px) 0;text-align:center">
-  <div style="max-width:1100px;margin:0 auto">
-    <div style="display:inline-flex;align-items:center;gap:12px;animation:fadeUp .7s ease both">
-      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79)"></span>
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#6F6D71">The Group</span>
-      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#ED1E79,#F7941D)"></span>
-    </div>
-    <h1 style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:660;font-size:clamp(2.2rem,5.6vw,4.8rem);letter-spacing:-.022em;line-height:1.03;margin:clamp(20px,3vw,32px) auto 0;max-width:20ch;animation:fadeUp .8s ease both;animation-delay:.08s">A single accountable partner, from first concept to final report.</h1>
-    <p style="font-size:clamp(16px,1.3vw,18px);line-height:1.75;color:#6F6D71;max-width:64ch;margin:clamp(22px,3vw,34px) auto 0;animation:fadeUp .9s ease both;animation-delay:.16s">Gallant Corporate Services Ltd is a Nairobi-based holding company delivering event production, brand experiences and public-sector convenings across Kenya and East Africa. Planning, design, in-house manufacturing and on-site execution sit under one roof — so clients deal with one accountable partner, concept to closeout.</p>
-    <div style="margin:clamp(44px,6vw,72px) auto 0;max-width:1100px;border-top:1px solid #E3E1DD"></div>
+<header style="padding:clamp(150px,20vh,220px) clamp(20px,5vw,72px) 0;text-align:center">
+  <div style="max-width:1080px;margin:0 auto">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#D62E6A;display:none;animation:fadeUp .7s ease both">The Group</div>
+    <h1 style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(2.2rem,5.6vw,4.8rem);letter-spacing:-.022em;line-height:1.02;margin:clamp(20px,3vw,32px) auto 0;max-width:20ch;animation:fadeUp .8s ease both;animation-delay:.08s">A single accountable partner, from first concept to final report.</h1>
+    <p style="font-size:clamp(16px,1.3vw,18px);line-height:1.75;color:#6B675E;max-width:64ch;margin:clamp(22px,3vw,34px) auto 0;animation:fadeUp .9s ease both;animation-delay:.16s">Gallant Corporate Services Ltd is a Nairobi-based holding company delivering event production, brand experiences and public-sector convenings across Kenya and East Africa. Planning, design, in-house manufacturing and on-site execution sit under one roof, so clients deal with one accountable partner from concept to closeout.</p>
+    <div style="margin:clamp(44px,6vw,72px) auto 0;max-width:1080px;border-top:1px solid #E1DDD3"></div>
   </div>
 </header>
 
-<section style="padding:clamp(72px,9vw,120px) clamp(18px,5vw,72px) 0">
-  <div style="max-width:1100px;margin:0 auto;text-align:center">
-    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:640;font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.02em;line-height:1.07;margin:0 auto;max-width:22ch">How the group is structured.</h2>
-    <div data-reveal style="margin-top:clamp(40px,5vw,56px)">
-      <div style="max-width:640px;margin:0 auto;border:1px solid #111013;background:#FFFFFF;padding:clamp(24px,3.4vw,40px)">
-        <img src="assets/gallant-lion-ink.png" alt="Gallant lion mark" style="height:48px;width:auto;display:block;margin:0 auto">
-        <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(20px,2.1vw,27px);letter-spacing:-.015em;margin-top:18px">Gallant Corporate Services Ltd</div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#6F6D71;margin-top:10px">Holding company · Event production &amp; management</div>
-        <p style="font-size:15px;line-height:1.7;color:#6F6D71;margin:14px auto 0;max-width:52ch">Coordinates planning, logistics and financial reporting across every mandate.</p>
-      </div>
-      <div style="display:flex;justify-content:center"><div style="width:2px;height:clamp(30px,4vw,48px);background:linear-gradient(180deg,#F7941D,#ED1E79)"></div></div>
-      <div data-two style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.4vw,28px);max-width:920px;margin:0 auto;text-align:center">
-        <div style="border:1px solid #E3E1DD;background:#FFFFFF;padding:clamp(22px,3vw,36px)">
-          <span style="display:block;width:34px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79);margin:0 auto"></span>
-          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(18px,1.9vw,24px);letter-spacing:-.015em;margin-top:20px">Gallant Branding International</div>
-          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#6F6D71;margin-top:10px">GBI — Manufacturing arm</div>
-          <p style="font-size:15px;line-height:1.7;color:#6F6D71;margin:14px auto 0;max-width:42ch">Industrial apparel, signage and corporate branding manufacturing, backed by over a decade of production experience.</p>
+<section style="padding:clamp(72px,9vw,120px) clamp(20px,5vw,72px) 0">
+  <div style="max-width:1080px;margin:0 auto;text-align:center">
+    <div data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#D62E6A;display:none">How the group is structured</div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.02em;line-height:1.06;margin:clamp(16px,2.4vw,26px) auto 0;max-width:22ch">One holding company. Two specialist divisions.</h2>
+    <p data-reveal style="font-size:clamp(15px,1.25vw,17px);line-height:1.75;color:#6B675E;max-width:58ch;margin:clamp(16px,2vw,24px) auto 0">The parent runs the event. The divisions give it a manufacturing arm and a sustainability arm most agencies have to outsource.</p>
+
+    <div data-reveal style="margin-top:clamp(44px,6vw,64px)">
+      <div style="max-width:560px;margin:0 auto;border:1.5px solid #14120E;background:#FBFAF6;padding:clamp(26px,3.4vw,40px);position:relative">
+        <div style="position:absolute;top:16px;right:18px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#D62E6A">Parent</div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:12px">
+          <img src="assets/brand-lion.png" alt="Gallant lion mark" style="height:44px;width:auto">
+          <span style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:700;font-size:clamp(20px,2.2vw,26px);letter-spacing:-.01em">Gallant Corporate Services Ltd</span>
         </div>
-        <div style="border:1px solid #E3E1DD;background:#FFFFFF;padding:clamp(22px,3vw,36px)">
-          <img src="assets/gla-logo.png" alt="Gallant Loop Africa" style="height:40px;width:auto;display:block;margin:0 auto">
-          <div style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(18px,1.9vw,24px);letter-spacing:-.015em;margin-top:16px">Gallant Loop Africa</div>
-          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#1E5B3E;margin-top:10px">GLA — Circular economy</div>
-          <p style="font-size:15px;line-height:1.7;color:#6F6D71;margin:14px auto 0;max-width:42ch">Upcycles post-use branded materials into new event and corporate products, with reportable ESG outcomes.</p>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#8C887E;margin-top:12px">Event production &amp; management</div>
+        <p style="font-size:14.5px;line-height:1.7;color:#6B675E;margin:12px auto 0;max-width:46ch">Coordinates planning, logistics and financial reporting across every mandate.</p>
+      </div>
+      <div data-conn style="width:1.5px;height:clamp(34px,5vw,56px);background:#D62E6A;margin:0 auto;transform-origin:top;animation:lineGrow .8s ease both"></div>
+      <div data-struct data-two style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.4vw,28px);max-width:940px;margin:0 auto">
+        <div style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(24px,3vw,38px);display:flex;flex-direction:column;align-items:center;text-align:center">
+          <img src="assets/brand-logo.png" alt="Gallant Branding International, full lockup" style="height:52px;width:auto">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#8C887E;margin-top:20px">Manufacturing arm</div>
+          <p style="font-size:15px;line-height:1.7;color:#6B675E;margin:12px auto 0;max-width:42ch">Industrial apparel, signage and corporate branding manufacturing, backed by over a decade of production experience.</p>
+        </div>
+        <div style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(24px,3vw,38px);display:flex;flex-direction:column;align-items:center;text-align:center">
+          <img src="assets/gla-logo.png" alt="Gallant Loop Africa" style="height:48px;width:auto">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#1E5B3E;margin-top:16px">Circular economy</div>
+          <p style="font-size:15px;line-height:1.7;color:#6B675E;margin:12px auto 0;max-width:42ch">Upcycles post-use branded materials into new event and corporate products, with reportable ESG outcomes.</p>
         </div>
       </div>
     </div>
-    <div data-reveal style="margin-top:clamp(32px,4vw,44px)"><a href="Gallant Divisions.dc.html" style="position:relative;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding-bottom:8px;display:inline-block">Both divisions in depth →<span style="position:absolute;left:0;bottom:0;width:100%;height:2px;background:linear-gradient(90deg,#F7941D,#ED1E79)"></span></a></div>
+    <div data-reveal style="margin-top:clamp(34px,4vw,48px)"><a href="Gallant Divisions.dc.html" style="display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#14120E;border:1px solid #D6D1C6;padding:14px 28px;border-radius:100px;transition:border-color .3s ease" style-hover="border-color:#14120E">Explore the divisions →</a></div>
   </div>
 </section>
 
-<section style="background:#0C0B0D;color:#FAF9F7;margin-top:clamp(80px,11vw,140px);padding:clamp(84px,11vw,140px) clamp(18px,5vw,72px);text-align:center">
-  <div style="max-width:1100px;margin:0 auto">
-    <div data-reveal style="display:inline-flex;align-items:center;gap:12px">
-      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79)"></span>
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#8B8990">Market context</span>
-      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#ED1E79,#F7941D)"></span>
-    </div>
-    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:640;font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.02em;line-height:1.07;margin:clamp(18px,2.6vw,28px) auto 0;max-width:24ch">At the centre of a growing events economy.</h2>
-    <p data-reveal style="font-size:clamp(15px,1.25vw,17px);line-height:1.75;color:#C9C7CC;max-width:62ch;margin:clamp(20px,2.6vw,28px) auto 0">Kenya is a premier hub for the Meetings, Incentives, Conferences and Exhibitions (MICE) sector in Africa. Gallant is positioned to deliver the production infrastructure these high-profile convenings demand.</p>
-    <div data-stats data-reveal style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px);margin-top:clamp(48px,7vw,72px)">
-      <div>
-        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.6rem,5.4vw,4.6rem);letter-spacing:-.03em;line-height:.95"><span data-count="27">0</span>%</div>
-        <span style="display:block;width:34px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79);margin:18px auto 0"></span>
-        <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8B8990;margin:14px auto 0;line-height:1.8;max-width:24ch">Of Kenya's 2024 tourism arrivals were MICE-related</p>
+<section style="background:#0B0A08;color:#F4F1EA;margin-top:clamp(80px,11vw,140px);padding:clamp(84px,11vw,150px) clamp(20px,5vw,72px);text-align:center">
+  <div style="max-width:1180px;margin:0 auto">
+    <div data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#D62E6A;display:none">Market context</div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.02em;line-height:1.06;margin:clamp(16px,2.4vw,26px) auto 0;max-width:24ch">At the centre of a growing events economy.</h2>
+    <p data-reveal style="font-size:clamp(15px,1.25vw,17px);line-height:1.75;color:#C7C3B9;max-width:62ch;margin:clamp(16px,2vw,24px) auto 0">Kenya is one of Africa's leading destinations for meetings, incentives, conferences and exhibitions. Gallant is positioned to deliver the production these high-profile convenings demand.</p>
+    <div data-stats data-reveal style="display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(48px,7vw,76px)">
+      <div style="border-left:1px solid #221F1A;padding:0 clamp(14px,2.2vw,32px)">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.4rem,5vw,4.4rem);letter-spacing:-.03em;line-height:.95"><span data-count="27">0</span>%</div>
+        <span style="display:block;width:30px;height:3px;background:#D62E6A;margin:18px auto 0"></span>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8C887E;margin:14px auto 0;line-height:1.8;max-width:24ch">Of Kenya's 2024 tourism arrivals were MICE-related</p>
       </div>
-      <div>
-        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.6rem,5.4vw,4.6rem);letter-spacing:-.03em;line-height:.95"><span data-count="37405">0</span></div>
-        <span style="display:block;width:34px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79);margin:18px auto 0"></span>
-        <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8B8990;margin:14px auto 0;line-height:1.8;max-width:24ch">International delegates hosted in 2024</p>
+      <div style="border-left:1px solid #221F1A;padding:0 clamp(14px,2.2vw,32px)">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.4rem,5vw,4.4rem);letter-spacing:-.03em;line-height:.95"><span data-count="37405">0</span></div>
+        <span style="display:block;width:30px;height:3px;background:#D62E6A;margin:18px auto 0"></span>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8C887E;margin:14px auto 0;line-height:1.8;max-width:24ch">International conference delegates hosted, 2024</p>
       </div>
-      <div>
-        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.6rem,5.4vw,4.6rem);letter-spacing:-.03em;line-height:.95"><span data-count="699">0</span>K</div>
-        <span style="display:block;width:34px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79);margin:18px auto 0"></span>
-        <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8B8990;margin:14px auto 0;line-height:1.8;max-width:24ch">Local delegates hosted in 2024</p>
+      <div style="border-left:1px solid #221F1A;padding:0 clamp(14px,2.2vw,32px)">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.4rem,5vw,4.4rem);letter-spacing:-.03em;line-height:.95"><span data-count="699">0</span>K</div>
+        <span style="display:block;width:30px;height:3px;background:#D62E6A;margin:18px auto 0"></span>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8C887E;margin:14px auto 0;line-height:1.8;max-width:24ch">Local conference delegates hosted, 2024</p>
       </div>
-      <div>
-        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.6rem,5.4vw,4.6rem);letter-spacing:-.03em;line-height:.95"><span data-count="1.2">0</span>T</div>
-        <span style="display:block;width:34px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79);margin:18px auto 0"></span>
-        <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8B8990;margin:14px auto 0;line-height:1.8;max-width:24ch">KSh — travel &amp; tourism contribution to GDP, 2024</p>
+      <div style="border-left:1px solid #221F1A;padding:0 clamp(14px,2.2vw,32px)">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.4rem,5vw,4.4rem);letter-spacing:-.03em;line-height:.95"><span data-count="1.2">0</span>T</div>
+        <span style="display:block;width:30px;height:3px;background:#D62E6A;margin:18px auto 0"></span>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8C887E;margin:14px auto 0;line-height:1.8;max-width:24ch">KSh, travel &amp; tourism contribution to GDP, 2024</p>
       </div>
     </div>
-    <p data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;color:#6F6D74;margin:clamp(36px,5vw,52px) auto 0;line-height:1.9;max-width:82ch">Sources: Tourism Research Institute (Kenya), Annual Tourism Sector Performance Report 2024 · World Travel &amp; Tourism Council (WTTC), 2025. Policy is shifting toward green certification and sustainable events — directly aligned with Gallant Loop Africa.</p>
+    <p data-reveal style="font-size:clamp(14px,1.15vw,16px);line-height:1.75;color:#C7C3B9;margin:clamp(36px,5vw,52px) auto 0;max-width:60ch">Policy across the region is shifting toward green certification and sustainable events, directly aligned with Gallant Loop Africa.</p>
   </div>
 </section>
 
-<section style="padding:clamp(96px,13vw,160px) clamp(18px,5vw,72px)">
-  <div style="max-width:900px;margin:0 auto;text-align:center">
-    <div data-reveal style="display:inline-flex;align-items:center;gap:12px">
-      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#F7941D,#ED1E79)"></span>
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#6F6D71">Why Gallant</span>
-      <span style="display:block;width:26px;height:3px;background:linear-gradient(90deg,#ED1E79,#F7941D)"></span>
+<section style="padding:clamp(96px,13vw,160px) clamp(20px,5vw,72px)">
+  <div style="max-width:940px;margin:0 auto;text-align:center">
+    <div data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#D62E6A;display:none">Why Gallant</div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.02em;line-height:1.06;margin:clamp(16px,2.4vw,26px) auto 0;max-width:20ch">Built to win, and to be reviewed.</h2>
+    <div data-reveal style="margin-top:clamp(40px,5vw,56px);border-top:1px solid #E1DDD3;text-align:left">
+      <div data-why style="padding:28px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">The one-roof advantage</div><p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:8px;max-width:66ch">Event management, in-house manufacturing and sustainability combined, reducing supply-chain risk and giving clients a single point of accountability.</p></div>
+      <div data-why style="padding:28px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">Procurement and compliance ready</div><p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:8px;max-width:66ch">Structured for public procurement, with budgeting, payment tracking and audit-ready closeout documentation on every project.</p></div>
+      <div data-why style="padding:28px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">A measurable sustainable edge</div><p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:8px;max-width:66ch">Gallant Loop Africa provides reportable ESG outcomes for clients and donors seeking green event solutions.</p></div>
+      <div data-why style="padding:28px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">Public and corporate fluency</div><p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:8px;max-width:66ch">Equally at home inside a government convening or a corporate brand activation, with the same disciplined delivery either way.</p></div>
+      <div data-why style="padding:28px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">Regional delivery capability</div><p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:8px;max-width:66ch">Headquartered in Nairobi, with delivery experience extending into South Sudan and across East Africa.</p></div>
     </div>
-    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:640;font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.02em;line-height:1.07;margin:clamp(18px,2.6vw,28px) auto 0;max-width:20ch">Built to win — and to be reviewed.</h2>
-    <div data-reveal style="margin-top:clamp(40px,5vw,56px);border-top:1px solid #E3E1DD;text-align:left">
-      <div data-why style="padding:26px 8px;border-bottom:1px solid #E3E1DD;transition:background .3s ease,padding-left .3s ease">
-        <div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">The "one roof" advantage</div>
-        <p style="font-size:15px;line-height:1.7;color:#6F6D71;margin-top:8px;max-width:66ch">Event management, in-house manufacturing (GBI) and sustainability (GLA) combined — reducing supply-chain risk and ensuring a single point of accountability.</p>
-      </div>
-      <div data-why style="padding:26px 8px;border-bottom:1px solid #E3E1DD;transition:background .3s ease,padding-left .3s ease">
-        <div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">Procurement &amp; compliance ready</div>
-        <p style="font-size:15px;line-height:1.7;color:#6F6D71;margin-top:8px;max-width:66ch">Structured to meet the demands of public procurement, with budgeting, payment tracking and audit-ready closeout documentation.</p>
-      </div>
-      <div data-why style="padding:26px 8px;border-bottom:1px solid #E3E1DD;transition:background .3s ease,padding-left .3s ease">
-        <div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">A measurable sustainable edge</div>
-        <p style="font-size:15px;line-height:1.7;color:#6F6D71;margin-top:8px;max-width:66ch">Gallant Loop Africa provides reportable ESG outcomes for clients and donors seeking green event solutions.</p>
-      </div>
-      <div data-why style="padding:26px 8px;border-bottom:1px solid #E3E1DD;transition:background .3s ease,padding-left .3s ease">
-        <div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">Public + corporate fluency</div>
-        <p style="font-size:15px;line-height:1.7;color:#6F6D71;margin-top:8px;max-width:66ch">Equally at home inside an MDA convening or a corporate brand activation — the same disciplined delivery either way.</p>
-      </div>
-      <div data-why style="padding:26px 8px;border-bottom:1px solid #E3E1DD;transition:background .3s ease,padding-left .3s ease">
-        <div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:600;font-size:clamp(17px,1.7vw,21px);letter-spacing:-.01em">Regional delivery capability</div>
-        <p style="font-size:15px;line-height:1.7;color:#6F6D71;margin-top:8px;max-width:66ch">Headquartered in Nairobi with delivery experience extending into South Sudan and across East Africa.</p>
-      </div>
-    </div>
-    <div data-reveal style="margin-top:clamp(36px,5vw,52px)">
-      <a href="Gallant Contact.dc.html" style="display:inline-block;position:relative;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:16px 34px;background:#111013;color:#FAF9F7;font-weight:500;transition:transform .3s ease" style-hover="transform:translateY(-2px)">Request a proposal →</a>
-    </div>
+    <div data-reveal style="margin-top:clamp(36px,5vw,52px)"><a href="Gallant Contact.dc.html" style="display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:17px 36px;background:#14120E;color:#F4F1EA;border-radius:100px;transition:transform .3s ease" style-hover="transform:translateY(-3px)">Contact us →</a></div>
   </div>
 </section>
 
@@ -171,12 +148,12 @@ class Component extends DCLogic {
       const raw = el.getAttribute('data-count');
       const target = parseFloat(raw);
       const dec = raw.includes('.') ? 1 : 0;
-      if (reduce) { el.textContent = target.toLocaleString(undefined, { minimumFractionDigits: dec, maximumFractionDigits: dec }); return; }
+      if (reduce) { el.textContent = target.toLocaleString(undefined,{minimumFractionDigits:dec,maximumFractionDigits:dec}); return; }
       const t0 = performance.now(), dur = 1300;
       const step = (t) => {
         const p = Math.min(1, (t - t0) / dur);
         const v = target * (1 - Math.pow(1 - p, 3));
-        el.textContent = v.toLocaleString(undefined, { minimumFractionDigits: dec, maximumFractionDigits: dec });
+        el.textContent = v.toLocaleString(undefined,{minimumFractionDigits:dec,maximumFractionDigits:dec});
         if (p < 1) requestAnimationFrame(step);
       };
       requestAnimationFrame(step);
@@ -186,8 +163,8 @@ class Component extends DCLogic {
     }, { threshold: 0.5 });
     counters.forEach(c => { if (reduce) runCount(c); else cio.observe(c); });
     document.querySelectorAll('[data-why]').forEach(w => {
-      w.addEventListener('mouseenter', () => { w.style.background = '#FFFFFF'; w.style.paddingLeft = '18px'; });
-      w.addEventListener('mouseleave', () => { w.style.background = 'transparent'; w.style.paddingLeft = '8px'; });
+      w.addEventListener('mouseenter', () => { w.style.background = '#FBFAF6'; w.style.paddingLeft = '20px'; });
+      w.addEventListener('mouseleave', () => { w.style.background = 'transparent'; w.style.paddingLeft = '10px'; });
     });
   }
   renderVals() { return {}; }
