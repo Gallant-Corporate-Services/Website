@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+[data-navroot] *{box-sizing:border-box}
+[data-navroot] a{color:inherit;text-decoration:none}
+[data-navroot] :focus-visible{outline:2px solid #14120E;outline-offset:3px}
+@media(max-width:900px){[data-navlinks]{display:none!important}[data-menu-btn]{display:flex!important}}
+@media(max-width:400px){[data-wordmark]{font-size:17px!important}[data-lion]{height:34px!important}[data-tag]{font-size:7.5px!important;letter-spacing:.2em!important}}
+@media(prefers-reduced-motion:reduce){[data-navroot] *{transition-duration:.001ms!important}}
+</style>
+</helmet>
+
+<div data-navroot style="font-family:'Archivo',system-ui,sans-serif">
+<nav data-navbar aria-label="Primary" style="position:fixed;top:0;left:0;width:100%;z-index:200;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 clamp(18px,5vw,64px);height:78px;border-bottom:1px solid transparent;background:transparent;transition:background .4s ease,border-color .4s ease,height .4s ease">
+  <a href="Gallant Home.dc.html" aria-label="Gallant Corporate Services, home" style="display:flex;align-items:center;gap:13px;flex:none">
+    <img data-lion src="assets/brand-lion.png" alt="Gallant lion mark" style="height:42px;width:auto;display:block">
+    <span style="display:flex;flex-direction:column;justify-content:center;gap:2px">
+      <span data-wordmark style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:700;font-size:20px;letter-spacing:-.005em;color:#14120E;line-height:.95">Gallant</span>
+      <span data-tag style="font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:.24em;text-transform:uppercase;color:#8C887E;line-height:1">Corporate Services</span>
+    </span>
+  </a>
+  <div data-navlinks style="display:flex;align-items:center;gap:clamp(24px,3vw,48px)">
+    <a data-page="group" href="Gallant Group.dc.html" style="position:relative;color:#6B675E;padding:9px 0;font-size:14px;font-weight:480;letter-spacing:.005em;transition:color .3s ease">Group<span data-ul style="position:absolute;left:0;bottom:3px;width:100%;height:1.5px;background:#14120E;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.22,.61,.36,1)"></span></a>
+    <a data-page="services" href="Gallant Services.dc.html" style="position:relative;color:#6B675E;padding:9px 0;font-size:14px;font-weight:480;letter-spacing:.005em;transition:color .3s ease">Services<span data-ul style="position:absolute;left:0;bottom:3px;width:100%;height:1.5px;background:#14120E;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.22,.61,.36,1)"></span></a>
+    <a data-page="divisions" href="Gallant Divisions.dc.html" style="position:relative;color:#6B675E;padding:9px 0;font-size:14px;font-weight:480;letter-spacing:.005em;transition:color .3s ease">Divisions<span data-ul style="position:absolute;left:0;bottom:3px;width:100%;height:1.5px;background:#14120E;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.22,.61,.36,1)"></span></a>
+    <a data-page="contact" href="Gallant Contact.dc.html" data-cta style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:560;letter-spacing:.02em;color:#FFFFFF;background:#14120E;padding:12px 24px;border:none;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease">Contact us</a>
+  </div>
+  <button data-menu-btn aria-label="Open menu" style="display:none;flex-direction:column;justify-content:center;align-items:flex-end;gap:6px;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:0;flex:none">
+    <span style="display:block;width:26px;height:2px;background:#14120E"></span>
+    <span style="display:block;width:18px;height:2px;background:#14120E"></span>
+  </button>
+</nav>
+
+<div data-menu style="position:fixed;inset:0;z-index:290;background:#F4F1EA;background-image:url('assets/paper.png');background-repeat:repeat;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:2px;opacity:0;visibility:hidden;transition:opacity .4s ease,visibility .4s ease;padding:0 24px">
+  <button data-menu-close aria-label="Close menu" style="position:absolute;top:16px;right:clamp(16px,5vw,56px);width:48px;height:48px;background:none;border:none;font-family:'Archivo',sans-serif;font-size:36px;font-weight:300;line-height:1;color:#14120E;cursor:pointer">×</button>
+  <img src="assets/brand-lion.png" alt="" style="height:52px;width:auto;margin-bottom:32px">
+  <a data-mpage="group" href="Gallant Group.dc.html" style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(28px,7vw,44px);letter-spacing:-.02em;color:#14120E;padding:10px 0">Group</a>
+  <a data-mpage="services" href="Gallant Services.dc.html" style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(28px,7vw,44px);letter-spacing:-.02em;color:#14120E;padding:10px 0">Services</a>
+  <a data-mpage="divisions" href="Gallant Divisions.dc.html" style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:620;font-size:clamp(28px,7vw,44px);letter-spacing:-.02em;color:#14120E;padding:10px 0">Divisions</a>
+  <a data-mpage="contact" href="Gallant Contact.dc.html" style="margin-top:28px;display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#FFFFFF;background:#14120E;padding:15px 30px;border-radius:100px">Contact us →</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;78px&quot;},&quot;active&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const active = this.props.active || '';
+    document.querySelectorAll('[data-page]').forEach(l => {
+      const ul = l.querySelector('[data-ul]');
+      const isCta = l.hasAttribute('data-cta');
+      if (l.getAttribute('data-page') === active && !isCta) {
+        l.style.color = '#14120E'; l.style.fontWeight = '560';
+        if (ul) ul.style.transform = 'scaleX(1)';
+      } else if (ul) {
+        l.addEventListener('mouseenter', () => { ul.style.transform = 'scaleX(1)'; l.style.color = '#14120E'; });
+        l.addEventListener('mouseleave', () => { ul.style.transform = 'scaleX(0)'; l.style.color = '#6B675E'; });
+      }
+      if (isCta) {
+        l.addEventListener('mouseenter', () => { l.style.transform = 'translateY(-2px)'; l.style.boxShadow = '0 10px 24px rgba(20,18,14,.22)'; });
+        l.addEventListener('mouseleave', () => { l.style.transform = 'none'; l.style.boxShadow = 'none'; });
+      }
+    });
+    const nav = document.querySelector('[data-navbar]');
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        if (y > 24) { nav.style.background = 'rgba(244,241,234,0.9)'; nav.style.backdropFilter = 'saturate(150%) blur(16px)'; nav.style.webkitBackdropFilter = 'saturate(150%) blur(16px)'; nav.style.borderBottomColor = '#E1DDD3'; nav.style.height = '64px'; }
+        else { nav.style.background = 'transparent'; nav.style.backdropFilter = 'none'; nav.style.webkitBackdropFilter = 'none'; nav.style.borderBottomColor = 'transparent'; nav.style.height = '78px'; }
+        ticking = false;
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    this._onScroll = onScroll; onScroll();
+    const menu = document.querySelector('[data-menu]');
+    const openM = () => { menu.style.opacity = '1'; menu.style.visibility = 'visible'; };
+    const closeM = () => { menu.style.opacity = '0'; menu.style.visibility = 'hidden'; };
+    const btn = document.querySelector('[data-menu-btn]');
+    const cl = document.querySelector('[data-menu-close]');
+    if (btn) btn.addEventListener('click', openM);
+    if (cl) cl.addEventListener('click', closeM);
+    document.querySelectorAll('[data-mpage]').forEach(l => l.addEventListener('click', closeM));
+  }
+  componentWillUnmount() { if (this._onScroll) window.removeEventListener('scroll', this._onScroll); }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
