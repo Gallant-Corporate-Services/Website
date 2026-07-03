@@ -1,4 +1,68 @@
+# Project dependencies and build output
 node_modules/
-.env
-.DS_Store
 dist/
+
+# Local environment files
+.env
+
+# Editor and OS files
+.DS_Store
+.vscode/
+.vscode-insiders/
+.vscode-shared/
+.idea/
+
+# Home folder clutter from using /home/samuel as the repo root
+.bash_history
+.cache/
+.claude/
+.claude.json
+.codeium/
+.config/
+.copilot/
+.dotnet/
+.gitconfig
+.gnupg/
+.gphoto/
+.ipython/
+.lesshst
+.lmstudio/
+.lmstudio-home-pointer
+.local/
+.m2/
+.mozilla/
+.node_repl_history
+.npm/
+.nvidia-settings-rc
+.nvm/
+.ollama/
+.pdbhistory
+.pki/
+.pm2/
+.profile
+.pyenv/
+.sqlite_history
+.ssh/
+.sudo_as_admin_successful
+.thunderbird/
+.viminfo
+.wget-hsts
+.wine/
+.zshrc
+Applications/
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Public/
+Templates/
+Videos/
+snap/
+SCHOOL/
+gallant-website/
+itel a60/
+z-frontend/
+
+# Generated or temporary artifacts
+.thumbnail
