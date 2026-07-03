@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallant Corporate Services, a production house built for events</title>
+<meta name="description" content="Event production, brand experiences and public-sector convenings, planned, manufactured and delivered under one roof across Kenya and East Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F1EA url('assets/paper.png') repeat;color:#14120E;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+h1,h2,h3,p{margin:0}
+::selection{background:#14120E;color:#F4F1EA}
+:focus-visible{outline:2px solid #14120E;outline-offset:3px}
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
+[data-reveal="in"]{opacity:1;transform:none}
+@keyframes riseIn{from{opacity:0;transform:translateY(112%)}to{opacity:1;transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes lineGrow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes softpulse{0%,100%{opacity:.5}50%{opacity:1}}
+.hL{display:block;overflow:hidden}
+.hL>span{display:block;animation:riseIn 1s cubic-bezier(.19,1,.22,1) both}
+@media(max-width:900px){[data-caps]{grid-template-columns:1fr!important}[data-svc]{grid-template-columns:1fr!important}}
+@media(max-width:680px){[data-stats]{grid-template-columns:1fr 1fr!important;row-gap:8px!important}[data-stats] [data-stat]{border-left:none!important;border-top:1px solid #E1DDD3;padding:28px 6px!important}}
+@media(max-width:360px){[data-stats]{grid-template-columns:1fr!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;animation-delay:0ms!important}[data-reveal]{opacity:1!important;transform:none!important}.hL>span{animation:none!important}[data-track]{animation:none!important}}
+</style>
+</helmet>
+
+<div data-screen-label="Home" style="position:relative;width:100%;overflow-x:clip">
+<dc-import name="SiteNav" active="home" hint-size="100%,78px"></dc-import>
+
+<header style="position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:110px clamp(20px,6vw,72px) clamp(60px,10vh,110px)">
+  <h1 style="font-family:'Archivo',sans-serif;font-stretch:100%;font-weight:680;letter-spacing:-.02em;line-height:1;font-size:clamp(2.7rem,7.6vw,6.6rem);margin-top:0;max-width:15ch">
+    <span class="hL"><span style="animation-delay:.05s">We produce the <span style="display:inline-block;border-bottom:.09em solid #D62E6A;padding-bottom:.03em">events</span></span></span>
+    <span class="hL"><span style="animation-delay:.15s">institutions are</span></span>
+    <span class="hL"><span style="animation-delay:.25s">judged by.</span></span>
+  </h1>
+  <p style="font-size:clamp(16px,1.5vw,20px);line-height:1.6;color:#6B675E;max-width:48ch;margin:clamp(26px,3.4vw,40px) auto 0;animation:fadeUp 1s ease both;animation-delay:.4s">Planned, manufactured and delivered under <span style="color:#14120E;font-weight:500;border-bottom:.08em solid #D62E6A;padding-bottom:.02em">one roof</span>, across Kenya and East Africa.</p>
+  <div style="margin-top:clamp(30px,4vw,46px);animation:fadeUp 1s ease both;animation-delay:.55s">
+    <a href="Gallant Contact.dc.html" style="display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#F4F1EA;background:#14120E;padding:17px 36px;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease" style-hover="transform:translateY(-3px);box-shadow:0 16px 34px rgba(20,18,14,.22)">Contact us →</a>
+  </div>
+</header>
+
+<div style="padding:0 clamp(14px,4vw,48px)">
+  <figure data-reveal style="max-width:1400px;margin:0 auto;position:relative;overflow:hidden;height:clamp(320px,64vh,660px);background:#141210">
+    <img data-hero-img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1900&auto=format&fit=crop" alt="A full auditorium during a major conference plenary" loading="lazy" onError="{{ imgFail }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);will-change:transform">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,10,8,.15),rgba(11,10,8,.05) 40%,rgba(11,10,8,.45))"></div>
+    <figcaption style="position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;gap:16px;padding:22px 26px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,241,234,.92)">
+      <span>Plenary in session</span><span>Under one roof</span>
+    </figcaption>
+  </figure>
+</div>
+
+<section id="work" style="padding:clamp(96px,13vw,180px) clamp(20px,5vw,72px) 0">
+  <div style="max-width:1080px;margin:0 auto;text-align:center">
+    <div data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#D62E6A;display:none">The Group</div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(1.9rem,4vw,3.4rem);letter-spacing:-.02em;line-height:1.05;margin:clamp(16px,2.4vw,26px) auto 0;max-width:20ch">One group. Three integrated capabilities.</h2>
+    <p data-reveal style="font-size:clamp(16px,1.3vw,18px);line-height:1.75;color:#6B675E;max-width:60ch;margin:clamp(18px,2.4vw,26px) auto 0">Most agencies assemble events from third-party suppliers. Gallant does not. Planning, design, manufacturing and on-site execution sit inside one group, so quality, timelines and accountability never leave the building.</p>
+    <div data-caps data-reveal style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px);margin-top:clamp(44px,6vw,68px);text-align:left">
+      <a href="Gallant Group.dc.html" data-card style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(26px,3vw,38px);display:flex;flex-direction:column;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
+        <span style="display:block;width:36px;height:3px;background:#D62E6A"></span>
+        <div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(18px,1.8vw,23px);letter-spacing:-.015em;margin-top:24px">Corporate Services</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#8C887E;margin-top:10px">Event production &amp; management</div>
+        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:16px;flex:1">The production entity, coordinating planning, logistics and financial reporting from concept to closeout.</p>
+      </a>
+      <a href="Gallant Divisions.dc.html" data-card style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(26px,3vw,38px);display:flex;flex-direction:column;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
+        <span style="display:block;width:36px;height:3px;background:#D62E6A"></span>
+        <div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(18px,1.8vw,23px);letter-spacing:-.015em;margin-top:24px">Branding International</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#8C887E;margin-top:10px">In-house manufacturing</div>
+        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:16px;flex:1">Industrial apparel, large-format signage and corporate branding, produced in-house, on time and on budget.</p>
+      </a>
+      <a href="Gallant Divisions.dc.html" data-card style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(26px,3vw,38px);display:flex;flex-direction:column;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
+        <span style="display:block;width:36px;height:3px;background:#1E5B3E"></span>
+        <div style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(18px,1.8vw,23px);letter-spacing:-.015em;margin-top:24px">Loop Africa</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#1E5B3E;margin-top:10px">Circular economy</div>
+        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:16px;flex:1">Post-use event materials, upcycled into new delegate kits and corporate products, with reportable ESG outcomes.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(96px,13vw,180px) clamp(20px,5vw,72px)">
+  <div style="max-width:1080px;margin:0 auto;text-align:center">
+    <div data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#D62E6A;display:none">What we do</div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(1.9rem,4vw,3.4rem);letter-spacing:-.02em;line-height:1.05;margin:clamp(16px,2.4vw,26px) auto 0;max-width:22ch">The full event lifecycle. Or any single workstream.</h2>
+    <div data-svc data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(36px,4vw,72px);margin-top:clamp(44px,5vw,64px);text-align:left">
+      <a href="Gallant Services.dc.html" data-row style="display:flex;align-items:baseline;gap:20px;padding:22px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><span data-rn style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#D62E6A;transition:color .3s ease">01</span><span style="font-size:clamp(16px,1.4vw,19px);font-weight:500;letter-spacing:-.005em">Event strategy &amp; production</span><span data-ra style="margin-left:auto;color:#B7B2A6;transition:transform .3s ease,color .3s ease">→</span></a>
+      <a href="Gallant Services.dc.html" data-row style="display:flex;align-items:baseline;gap:20px;padding:22px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><span data-rn style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#D62E6A;transition:color .3s ease">05</span><span style="font-size:clamp(16px,1.4vw,19px);font-weight:500;letter-spacing:-.005em">Branded apparel, signage &amp; merchandise</span><span data-ra style="margin-left:auto;color:#B7B2A6;transition:transform .3s ease,color .3s ease">→</span></a>
+      <a href="Gallant Services.dc.html" data-row style="display:flex;align-items:baseline;gap:20px;padding:22px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><span data-rn style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#D62E6A;transition:color .3s ease">02</span><span style="font-size:clamp(16px,1.4vw,19px);font-weight:500;letter-spacing:-.005em">MICE &amp; conference management</span><span data-ra style="margin-left:auto;color:#B7B2A6;transition:transform .3s ease,color .3s ease">→</span></a>
+      <a href="Gallant Services.dc.html" data-row style="display:flex;align-items:baseline;gap:20px;padding:22px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><span data-rn style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#D62E6A;transition:color .3s ease">06</span><span style="font-size:clamp(16px,1.4vw,19px);font-weight:500;letter-spacing:-.005em">Sustainable event solutions</span><span data-ra style="margin-left:auto;color:#B7B2A6;transition:transform .3s ease,color .3s ease">→</span></a>
+      <a href="Gallant Services.dc.html" data-row style="display:flex;align-items:baseline;gap:20px;padding:22px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><span data-rn style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#D62E6A;transition:color .3s ease">03</span><span style="font-size:clamp(16px,1.4vw,19px);font-weight:500;letter-spacing:-.005em">Brand activations &amp; experiences</span><span data-ra style="margin-left:auto;color:#B7B2A6;transition:transform .3s ease,color .3s ease">→</span></a>
+      <a href="Gallant Services.dc.html" data-row style="display:flex;align-items:baseline;gap:20px;padding:22px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><span data-rn style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#D62E6A;transition:color .3s ease">07</span><span style="font-size:clamp(16px,1.4vw,19px);font-weight:500;letter-spacing:-.005em">Vendor &amp; supplier management</span><span data-ra style="margin-left:auto;color:#B7B2A6;transition:transform .3s ease,color .3s ease">→</span></a>
+      <a href="Gallant Services.dc.html" data-row style="display:flex;align-items:baseline;gap:20px;padding:22px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><span data-rn style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#D62E6A;transition:color .3s ease">04</span><span style="font-size:clamp(16px,1.4vw,19px);font-weight:500;letter-spacing:-.005em">Logistics &amp; site operations</span><span data-ra style="margin-left:auto;color:#B7B2A6;transition:transform .3s ease,color .3s ease">→</span></a>
+      <a href="Gallant Services.dc.html" data-row style="display:flex;align-items:baseline;gap:20px;padding:22px 10px;border-bottom:1px solid #E1DDD3;transition:background .3s ease,padding-left .3s ease"><span data-rn style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#D62E6A;transition:color .3s ease">08</span><span style="font-size:clamp(16px,1.4vw,19px);font-weight:500;letter-spacing:-.005em">Financial reporting &amp; compliance</span><span data-ra style="margin-left:auto;color:#B7B2A6;transition:transform .3s ease,color .3s ease">→</span></a>
+    </div>
+    <div data-reveal style="margin-top:clamp(34px,4vw,48px)"><a href="Gallant Services.dc.html" style="display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#14120E;border:1px solid #D6D1C6;padding:14px 28px;border-radius:100px;transition:border-color .3s ease" style-hover="border-color:#14120E">All services &amp; process →</a></div>
+  </div>
+</section>
+
+<section style="background:#0B0A08;color:#F4F1EA;padding:clamp(90px,12vw,160px) clamp(20px,5vw,72px)">
+  <div style="max-width:1180px;margin:0 auto;text-align:center">
+    <div data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#D62E6A;display:none">At a glance</div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(1.9rem,4vw,3.4rem);letter-spacing:-.02em;line-height:1.05;margin:clamp(16px,2.4vw,26px) auto 0;max-width:22ch">Reach most agencies do not have.</h2>
+    <div data-stats data-reveal style="display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(48px,7vw,84px)">
+      <div data-stat style="border-left:1px solid #221F1A;padding:0 clamp(14px,2.4vw,34px)">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(3rem,6.6vw,6.2rem);letter-spacing:-.03em;line-height:.9"><span data-count="10">0</span>+</div>
+        <span style="display:block;width:32px;height:3px;background:#D62E6A;margin:22px auto 0"></span>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-top:18px;color:#C7C3B9">Years</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#8C887E;margin:8px auto 0;max-width:20ch">Combined production experience</p>
+      </div>
+      <div data-stat style="border-left:1px solid #221F1A;padding:0 clamp(14px,2.4vw,34px)">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(3rem,6.6vw,6.2rem);letter-spacing:-.03em;line-height:.9"><span data-count="2">0</span></div>
+        <span style="display:block;width:32px;height:3px;background:#D62E6A;margin:22px auto 0"></span>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-top:18px;color:#C7C3B9">Divisions</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#8C887E;margin:8px auto 0;max-width:20ch">Manufacturing &amp; circular economy</p>
+      </div>
+      <div data-stat style="border-left:1px solid #221F1A;padding:0 clamp(14px,2.4vw,34px)">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(3rem,6.6vw,6.2rem);letter-spacing:-.03em;line-height:.9"><span data-count="16">0</span></div>
+        <span style="display:block;width:32px;height:3px;background:#D62E6A;margin:22px auto 0"></span>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-top:18px;color:#C7C3B9">Institutions</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#8C887E;margin:8px auto 0;max-width:20ch">Public &amp; private clients served</p>
+      </div>
+      <div data-stat style="border-left:1px solid #221F1A;padding:0 clamp(14px,2.4vw,34px)">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(3rem,6.6vw,6.2rem);letter-spacing:-.03em;line-height:.9"><span data-count="2">0</span>+</div>
+        <span style="display:block;width:32px;height:3px;background:#D62E6A;margin:22px auto 0"></span>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-top:18px;color:#C7C3B9">Countries</div>
+        <p style="font-size:13.5px;line-height:1.6;color:#8C887E;margin:8px auto 0;max-width:20ch">Kenya &amp; South Sudan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(96px,13vw,180px) 0 clamp(80px,11vw,140px)">
+  <div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,5vw,72px);text-align:center">
+    <div data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#D62E6A;display:none">Track record</div>
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(1.9rem,4vw,3.4rem);letter-spacing:-.02em;line-height:1.05;margin:clamp(16px,2.4vw,26px) auto 0;max-width:22ch">Trusted by public and private institutions.</h2>
+  </div>
+  <div data-marquee data-reveal style="position:relative;overflow:hidden;margin-top:clamp(44px,6vw,68px);border-top:1px solid #E1DDD3;border-bottom:1px solid #E1DDD3;padding:clamp(30px,4vw,48px) 0">
+    <div data-track style="display:flex;width:max-content;animation:marquee 48s linear infinite">
+      <div style="display:flex;align-items:center;gap:clamp(50px,6vw,92px);padding-right:clamp(50px,6vw,92px)">
+        <img src="assets/logos/08-executive-office.png" alt="The Executive Office of the President" style="height:clamp(40px,5vw,58px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/06-tourism-fund.png" alt="Tourism Fund" style="height:clamp(34px,4.4vw,50px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/07-magical-kenya.png" alt="Magical Kenya" style="height:clamp(46px,5.6vw,66px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/09-communications-authority.png" alt="Communications Authority of Kenya" style="height:clamp(36px,4.6vw,52px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/12-kippra.png" alt="KIPPRA" style="height:clamp(40px,5vw,56px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/02-tveta.png" alt="TVETA" style="height:clamp(46px,5.6vw,66px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/05-kcb.png" alt="KCB" style="height:clamp(40px,5vw,56px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/04-absa.png" alt="Absa" style="height:clamp(42px,5.2vw,60px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/03-ecobank.png" alt="Ecobank" style="height:clamp(34px,4.4vw,48px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/15-sidian-bank.png" alt="Sidian Bank" style="height:clamp(40px,5vw,56px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/16-geminia.png" alt="Geminia Life Insurance" style="height:clamp(40px,5vw,56px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/01-capitalpay.png" alt="CapitalPay" style="height:clamp(34px,4.4vw,48px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/11-ketepa.png" alt="KETEPA" style="height:clamp(44px,5.4vw,64px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/13-world-vision.png" alt="World Vision" style="height:clamp(42px,5.2vw,60px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/10-action-against-hunger.png" alt="Action Against Hunger" style="height:clamp(42px,5.2vw,60px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+        <img src="assets/logos/14-iavi.png" alt="IAVI" style="height:clamp(42px,5.2vw,60px);width:auto;filter:none;opacity:.95;transition:opacity .4s ease,transform .4s ease" style-hover="opacity:1;transform:scale(1.05)">
+      </div>
+      <div aria-hidden="true" style="display:flex;align-items:center;gap:clamp(50px,6vw,92px);padding-right:clamp(50px,6vw,92px)">
+        <img src="assets/logos/08-executive-office.png" alt="" style="height:clamp(40px,5vw,58px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/06-tourism-fund.png" alt="" style="height:clamp(34px,4.4vw,50px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/07-magical-kenya.png" alt="" style="height:clamp(46px,5.6vw,66px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/09-communications-authority.png" alt="" style="height:clamp(36px,4.6vw,52px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/12-kippra.png" alt="" style="height:clamp(40px,5vw,56px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/02-tveta.png" alt="" style="height:clamp(46px,5.6vw,66px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/05-kcb.png" alt="" style="height:clamp(40px,5vw,56px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/04-absa.png" alt="" style="height:clamp(42px,5.2vw,60px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/03-ecobank.png" alt="" style="height:clamp(34px,4.4vw,48px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/15-sidian-bank.png" alt="" style="height:clamp(40px,5vw,56px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/16-geminia.png" alt="" style="height:clamp(40px,5vw,56px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/01-capitalpay.png" alt="" style="height:clamp(34px,4.4vw,48px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/11-ketepa.png" alt="" style="height:clamp(44px,5.4vw,64px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/13-world-vision.png" alt="" style="height:clamp(42px,5.2vw,60px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/10-action-against-hunger.png" alt="" style="height:clamp(42px,5.2vw,60px);width:auto;filter:none;opacity:.95">
+        <img src="assets/logos/14-iavi.png" alt="" style="height:clamp(42px,5.2vw,60px);width:auto;filter:none;opacity:.95">
+      </div>
+    </div>
+    <div style="position:absolute;top:0;left:0;bottom:0;width:clamp(48px,10vw,160px);background:linear-gradient(90deg,#F4F1EA,rgba(244,241,234,0));pointer-events:none"></div>
+    <div style="position:absolute;top:0;right:0;bottom:0;width:clamp(48px,10vw,160px);background:linear-gradient(270deg,#F4F1EA,rgba(244,241,234,0));pointer-events:none"></div>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden;background:#0B0A08;color:#F4F1EA;padding:clamp(110px,15vw,200px) clamp(20px,5vw,72px);text-align:center">
+  <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1900&auto=format&fit=crop" alt="Stage lighting rig above a live event audience" loading="lazy" onError="{{ imgFail }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.32">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(11,10,8,.35),rgba(11,10,8,.82))"></div>
+  <div style="position:relative;max-width:1000px;margin:0 auto">
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:660;font-size:clamp(2.4rem,7vw,6rem);letter-spacing:-.026em;line-height:.98;max-width:15ch;margin:0 auto">Ready when the date is set.</h2>
+    <p data-reveal style="font-size:clamp(15px,1.3vw,18px);line-height:1.7;color:#C7C3B9;max-width:46ch;margin:clamp(22px,3vw,32px) auto 0">Tell us the objective and the date. We will bring the scope, the budget and the plan.</p>
+    <div data-reveal style="margin-top:clamp(30px,4vw,44px)">
+      <a href="Gallant Contact.dc.html" style="display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:17px 38px;background:#F4F1EA;color:#14120E;font-weight:500;border-radius:100px;transition:transform .3s ease" style-hover="transform:translateY(-3px)">Contact us →</a>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,560px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const reveals = document.querySelectorAll('[data-reveal]');
+    if (reduce) { reveals.forEach(e => e.setAttribute('data-reveal', 'in')); }
+    else {
+      const io = new IntersectionObserver((ents) => {
+        ents.forEach(en => { if (en.isIntersecting) { en.target.setAttribute('data-reveal', 'in'); io.unobserve(en.target); } });
+      }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+      reveals.forEach(e => io.observe(e));
+      setTimeout(() => reveals.forEach(e => { if (e.getAttribute('data-reveal') !== 'in') e.setAttribute('data-reveal', 'in'); }), 2600);
+    }
+    document.querySelectorAll('[data-card]').forEach(cd => {
+      cd.addEventListener('mouseenter', () => { cd.style.transform = 'translateY(-6px)'; cd.style.boxShadow = '0 22px 48px rgba(20,18,14,.10)'; cd.style.borderColor = '#CFC9BC'; });
+      cd.addEventListener('mouseleave', () => { cd.style.transform = 'none'; cd.style.boxShadow = 'none'; cd.style.borderColor = '#E1DDD3'; });
+    });
+    document.querySelectorAll('[data-row]').forEach(r => {
+      const ra = r.querySelector('[data-ra]');
+      r.addEventListener('mouseenter', () => { r.style.background = '#FBFAF6'; r.style.paddingLeft = '18px'; if (ra) { ra.style.transform = 'translateX(6px)'; ra.style.color = '#ED1E79'; } });
+      r.addEventListener('mouseleave', () => { r.style.background = 'transparent'; r.style.paddingLeft = '10px'; if (ra) { ra.style.transform = 'none'; ra.style.color = '#B7B2A6'; } });
+    });
+    const heroImg = document.querySelector('[data-hero-img]');
+    if (heroImg && !reduce) {
+      let ticking = false;
+      const onScroll = () => {
+        if (ticking) return; ticking = true;
+        requestAnimationFrame(() => {
+          const y = window.scrollY, vh = window.innerHeight;
+          const p = Math.max(0, Math.min(1, y / (vh * 1.3)));
+          heroImg.style.transform = 'scale(' + (1.08 - 0.06 * p) + ')';
+          ticking = false;
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      this._onScroll = onScroll;
+    }
+    const counters = document.querySelectorAll('[data-count]');
+    const runCount = (el) => {
+      const target = parseInt(el.getAttribute('data-count'), 10);
+      if (reduce) { el.textContent = target; return; }
+      const t0 = performance.now(), dur = 1200;
+      const step = (t) => {
+        const p = Math.min(1, (t - t0) / dur);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    const cio = new IntersectionObserver((ents) => {
+      ents.forEach(en => { if (en.isIntersecting) { runCount(en.target); cio.unobserve(en.target); } });
+    }, { threshold: 0.5 });
+    counters.forEach(c => { if (reduce) c.textContent = c.getAttribute('data-count'); else cio.observe(c); });
+    // marquee pauses on hover only
+    const mq = document.querySelector('[data-marquee]');
+    const track = document.querySelector('[data-track]');
+    if (mq && track && !reduce) {
+      mq.addEventListener('mouseenter', () => { track.style.animationPlayState = 'paused'; });
+      mq.addEventListener('mouseleave', () => { track.style.animationPlayState = 'running'; });
+    }
+  }
+  componentWillUnmount() { if (this._onScroll) window.removeEventListener('scroll', this._onScroll); }
+  renderVals() { return { imgFail: (e) => { e.target.style.display = 'none'; } }; }
+}
+</script>
+</body>
+</html>

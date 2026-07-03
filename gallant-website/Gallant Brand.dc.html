@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand, Gallant Corporate Services</title>
+<meta name="description" content="The Gallant brand: lion mark, wordmark, colour system and typography.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F1EA url('assets/paper.png') repeat;color:#14120E;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+h1,h2,h3,p{margin:0}
+::selection{background:#14120E;color:#F4F1EA}
+:focus-visible{outline:2px solid #14120E;outline-offset:3px}
+[data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .75s cubic-bezier(.22,.61,.36,1),transform .75s cubic-bezier(.22,.61,.36,1)}
+[data-reveal="in"]{opacity:1;transform:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(max-width:880px){[data-two]{grid-template-columns:1fr!important}[data-swatches]{grid-template-columns:1fr 1fr!important}}
+@media(max-width:420px){[data-swatches]{grid-template-columns:1fr!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;animation-delay:0ms!important}[data-reveal]{opacity:1!important;transform:none!important}}
+</style>
+</helmet>
+
+<div data-screen-label="Brand" style="position:relative;width:100%;overflow-x:clip">
+<dc-import name="SiteNav" active="brand" hint-size="100%,76px"></dc-import>
+
+<header style="padding:clamp(150px,20vh,220px) clamp(18px,5vw,72px) 0;text-align:center">
+  <div style="max-width:1100px;margin:0 auto">
+    <div style="display:inline-flex;align-items:center;gap:12px;animation:fadeUp .7s ease both">
+      <span style="display:block;width:26px;height:3px;background:#D62E6A"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#6B675E">The Gallant Brand</span>
+      <span style="display:block;width:26px;height:3px;background:#D62E6A"></span>
+    </div>
+    <h1 style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:660;font-size:clamp(2.2rem,5.6vw,4.8rem);letter-spacing:-.022em;line-height:1.03;margin:clamp(20px,3vw,32px) auto 0;max-width:18ch;animation:fadeUp .8s ease both;animation-delay:.08s">One mark. One voice. Everywhere.</h1>
+    <p style="font-size:clamp(16px,1.3vw,18px);line-height:1.75;color:#6B675E;max-width:56ch;margin:clamp(22px,3vw,34px) auto 0;animation:fadeUp .9s ease both;animation-delay:.16s">The assets and rules that keep Gallant consistent, on a summit stage, a tender document, or this website.</p>
+    <div style="margin:clamp(44px,6vw,72px) auto 0;border-top:1px solid #E1DDD3"></div>
+  </div>
+</header>
+
+<section style="padding:clamp(56px,7vw,90px) clamp(18px,5vw,72px) 0">
+  <div style="max-width:1100px;margin:0 auto;text-align:center">
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:640;font-size:clamp(1.7rem,3vw,2.6rem);letter-spacing:-.02em;line-height:1.07">The lion mark</h2>
+    <div data-two data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.4vw,28px);margin-top:clamp(32px,4vw,44px)">
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(36px,5vw,64px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px">
+        <div style="display:flex;align-items:center;gap:14px">
+          <img src="assets/brand-lion.png" alt="Gallant lion mark, ink on paper" style="height:64px;width:auto">
+          <span style="font-family:'Archivo',sans-serif;font-stretch:122%;font-weight:700;font-size:34px;letter-spacing:-.015em">Gallant</span>
+        </div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#6B675E">Primary, ink on paper</span>
+        <a href="assets/brand-lion.png" download style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#14120E;border-bottom:2px solid #D62E6A;padding-bottom:2px">Download PNG ↓</a>
+      </div>
+      <div style="border:1px solid #221F1A;background:#0B0A08;padding:clamp(36px,5vw,64px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px">
+        <div style="display:flex;align-items:center;gap:14px">
+          <img src="assets/brand-lion-white.png" alt="Gallant lion mark, white on ink" style="height:64px;width:auto">
+          <span style="font-family:'Archivo',sans-serif;font-stretch:122%;font-weight:700;font-size:34px;letter-spacing:-.015em;color:#F4F1EA">Gallant</span>
+        </div>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#8C887E">Reversed, white on ink</span>
+        <a href="assets/brand-lion-white.png" download style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#F4F1EA;border-bottom:2px solid #D62E6A;padding-bottom:2px">Download PNG ↓</a>
+      </div>
+    </div>
+    <div data-two data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.4vw,28px);margin-top:clamp(18px,2.4vw,28px)">
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px">
+        <img src="assets/brand-logo.png" alt="Full Gallant Branding International lockup" style="height:56px;width:auto">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#6B675E">Full lockup, Branding International</span>
+        <a href="assets/brand-logo.png" download style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#14120E;border-bottom:2px solid #D62E6A;padding-bottom:2px">Download PNG ↓</a>
+      </div>
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px">
+        <img src="assets/gla-logo.png" alt="Gallant Loop Africa logo" style="height:56px;width:auto">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#1E5B3E">Gallant Loop Africa</span>
+        <a href="assets/gla-logo.png" download style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#1E5B3E;border-bottom:2px solid #1E5B3E;padding-bottom:2px">Download PNG ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(80px,10vw,130px) clamp(18px,5vw,72px) 0">
+  <div style="max-width:1100px;margin:0 auto;text-align:center">
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:640;font-size:clamp(1.7rem,3vw,2.6rem);letter-spacing:-.02em;line-height:1.07">Colour system</h2>
+    <p data-reveal style="font-size:clamp(15px,1.25vw,17px);line-height:1.75;color:#6B675E;max-width:58ch;margin:clamp(16px,2vw,24px) auto 0">An austere paper-and-ink world. A single accent colour, used sparingly, one detail at a time. Loop green appears only inside Loop Africa content.</p>
+    <div data-swatches data-reveal style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,24px);margin-top:clamp(32px,4vw,44px)">
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;text-align:left">
+        <div style="height:110px;background:#F4F1EA;border-bottom:1px solid #E1DDD3"></div>
+        <div style="padding:16px 18px"><div style="font-weight:600;font-size:15px">Paper</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6B675E;margin-top:4px">#F4F1EA</div></div>
+      </div>
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;text-align:left">
+        <div style="height:110px;background:#14120E"></div>
+        <div style="padding:16px 18px"><div style="font-weight:600;font-size:15px">Ink</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6B675E;margin-top:4px">#14120E</div></div>
+      </div>
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;text-align:left">
+        <div style="height:110px;background:#6B675E"></div>
+        <div style="padding:16px 18px"><div style="font-weight:600;font-size:15px">Stone</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6B675E;margin-top:4px">#6B675E</div></div>
+      </div>
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;text-align:left">
+        <div style="height:110px;background:#E1DDD3"></div>
+        <div style="padding:16px 18px"><div style="font-weight:600;font-size:15px">Hairline</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6B675E;margin-top:4px">#E1DDD3</div></div>
+      </div>
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;text-align:left">
+        <div style="height:110px;background:#D62E6A"></div>
+        <div style="padding:16px 18px"><div style="font-weight:600;font-size:15px">Accent</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6B675E;margin-top:4px">#D62E6A</div></div>
+      </div>
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;text-align:left">
+        <div style="height:110px;background:#1E5B3E"></div>
+        <div style="padding:16px 18px"><div style="font-weight:600;font-size:15px">Loop Green</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6B675E;margin-top:4px">#1E5B3E · Loop Africa only</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(80px,10vw,130px) clamp(18px,5vw,72px)">
+  <div style="max-width:1100px;margin:0 auto;text-align:center">
+    <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:640;font-size:clamp(1.7rem,3vw,2.6rem);letter-spacing:-.02em;line-height:1.07">Typography</h2>
+    <div data-two data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.4vw,28px);margin-top:clamp(32px,4vw,44px);text-align:left">
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(24px,3.4vw,40px)">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#6B675E">Display &amp; body, Archivo</div>
+        <div style="font-family:'Archivo',sans-serif;font-stretch:122%;font-weight:700;font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.024em;line-height:1;margin-top:18px">Aa Bb Cc 0123</div>
+        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:16px;max-width:46ch">Expanded weights for headlines, regular widths for body copy. Sentence case, never all-caps shouting.</p>
+      </div>
+      <div style="border:1px solid #E1DDD3;background:#FBFAF6;padding:clamp(24px,3.4vw,40px)">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#6B675E">Utility, IBM Plex Mono</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:clamp(1.2rem,2.4vw,1.9rem);letter-spacing:.08em;margin-top:22px">AA BB CC 0123</div>
+        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:22px;max-width:46ch">Small caps, wide tracking, labels, captions, figures and the connective tissue of every layout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#0B0A08;color:#F4F1EA;padding:clamp(72px,9vw,110px) clamp(18px,5vw,72px);text-align:center">
+  <div style="max-width:1100px;margin:0 auto">
+    <p data-reveal style="font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:640;font-size:clamp(1.5rem,3.4vw,2.6rem);letter-spacing:-.02em;line-height:1.15;max-width:26ch;margin:0 auto">A production house, built for events.</p>
+    <p data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8C887E;margin-top:20px">Brand queries, sales@gallantbranding.co.ke</p>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,560px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const reveals = document.querySelectorAll('[data-reveal]');
+    if (reduce) { reveals.forEach(e => e.setAttribute('data-reveal', 'in')); }
+    else {
+      const io = new IntersectionObserver((ents) => {
+        ents.forEach(en => { if (en.isIntersecting) { en.target.setAttribute('data-reveal', 'in'); io.unobserve(en.target); } });
+      }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+      reveals.forEach(e => io.observe(e));
+      setTimeout(() => reveals.forEach(e => { if (e.getAttribute('data-reveal') !== 'in') e.setAttribute('data-reveal', 'in'); }), 2600);
+    }
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
