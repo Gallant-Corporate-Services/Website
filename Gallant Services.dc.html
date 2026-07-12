@@ -34,6 +34,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://picsum.photos" crossorigin>
+<link rel="preconnect" href="https://fastly.picsum.photos" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
@@ -47,11 +49,12 @@ h1,h2,h3,p{margin:0}
 [data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
 [data-reveal="in"]{opacity:1;transform:none}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-@media(max-width:1080px){[data-proc]{grid-template-columns:repeat(2,1fr)!important;gap:44px 30px!important}}
+@media(max-width:860px){[data-caps]{grid-template-columns:1fr!important;gap:32px!important}.band-photo{min-height:210px!important}}
 @media(max-width:900px){[data-grid]{grid-template-columns:1fr!important}}
-@media(max-width:560px){[data-proc]{grid-template-columns:1fr!important}}
+@media(max-width:560px){[data-step]{grid-template-columns:64px 1fr!important;gap:16px 14px!important}[data-sn]{font-size:2rem!important}[data-step] .step-photo{grid-column:1 / -1;margin-top:6px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;animation-delay:0ms!important}[data-reveal]{opacity:1!important;transform:none!important}}
 </style>
+<script src="./image-slot.js"></script>
 </helmet>
 
 <div data-screen-label="Services" style="position:relative;width:100%;overflow-x:clip">
@@ -66,91 +69,222 @@ h1,h2,h3,p{margin:0}
   </div>
 </header>
 
-<section style="padding:clamp(56px,7vw,90px) clamp(20px,5vw,72px) 0">
+<section style="padding:clamp(48px,6vw,80px) clamp(20px,5vw,72px) 0">
   <div style="max-width:1180px;margin:0 auto">
-    <div data-grid data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,24px)">
-      <div data-scard data-acc="#D62E6A" style="border:1px solid #E1DDD3;background:#FBFAF6;border-radius:6px;padding:clamp(26px,3vw,40px);cursor:pointer;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#D62E6A">01</span><span data-plus style="font-family:'Archivo',sans-serif;font-weight:400;font-size:26px;line-height:1;color:#B7B2A6;transition:transform .45s cubic-bezier(.22,.61,.36,1),color .3s ease">+</span></div>
-        <h3 style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.015em;margin-top:18px">Event strategy &amp; production</h3>
-        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:12px">Concept development, programme design, run of show and end-to-end production management.</p>
-        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><ul style="list-style:none;margin:20px 0 0;padding:20px 0 0;border-top:1px solid #E7E3D9;display:flex;flex-direction:column;gap:11px"><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Concept &amp; theme development</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Programme &amp; run-of-show design</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Stage, set &amp; technical direction</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Production management &amp; crew</li></ul></div>
+    <div data-caps data-reveal style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,44px)">
+      <div style="text-align:left">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.2rem,4vw,3.2rem);letter-spacing:-.03em;line-height:1;color:#14120E">One</div>
+        <div style="width:34px;height:3px;background:#D62E6A;margin:16px 0"></div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.01em">Accountable partner</div>
+        <p style="font-size:14.5px;line-height:1.65;color:#6B675E;margin-top:8px;max-width:34ch">One team owns planning, production and reporting. No finger-pointing between suppliers when it matters most.</p>
       </div>
-      <div data-scard data-acc="#D62E6A" style="border:1px solid #E1DDD3;background:#FBFAF6;border-radius:6px;padding:clamp(26px,3vw,40px);cursor:pointer;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#D62E6A">02</span><span data-plus style="font-family:'Archivo',sans-serif;font-weight:400;font-size:26px;line-height:1;color:#B7B2A6;transition:transform .45s cubic-bezier(.22,.61,.36,1),color .3s ease">+</span></div>
-        <h3 style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.015em;margin-top:18px">MICE &amp; conference management</h3>
-        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:12px">Meetings, incentives, conferences and exhibitions, including delegate registration, accreditation and protocol.</p>
-        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><ul style="list-style:none;margin:20px 0 0;padding:20px 0 0;border-top:1px solid #E7E3D9;display:flex;flex-direction:column;gap:11px"><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Delegate registration &amp; accreditation</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Protocol &amp; VIP handling</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Speaker &amp; session management</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Exhibition &amp; booth coordination</li></ul></div>
+      <div style="text-align:left">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.2rem,4vw,3.2rem);letter-spacing:-.03em;line-height:1;color:#14120E">In-house</div>
+        <div style="width:34px;height:3px;background:#D62E6A;margin:16px 0"></div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.01em">Manufacturing &amp; branding</div>
+        <p style="font-size:14.5px;line-height:1.65;color:#6B675E;margin-top:8px;max-width:34ch">Apparel, signage and branding made under our own roof — fewer failure points, tighter timelines, protected quality.</p>
       </div>
-      <div data-scard data-acc="#D62E6A" style="border:1px solid #E1DDD3;background:#FBFAF6;border-radius:6px;padding:clamp(26px,3vw,40px);cursor:pointer;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#D62E6A">03</span><span data-plus style="font-family:'Archivo',sans-serif;font-weight:400;font-size:26px;line-height:1;color:#B7B2A6;transition:transform .45s cubic-bezier(.22,.61,.36,1),color .3s ease">+</span></div>
-        <h3 style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.015em;margin-top:18px">Brand activations &amp; experiences</h3>
-        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:12px">Product launches, brand activations and experiential campaigns designed for impact and recall.</p>
-        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><ul style="list-style:none;margin:20px 0 0;padding:20px 0 0;border-top:1px solid #E7E3D9;display:flex;flex-direction:column;gap:11px"><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Launch concept &amp; creative</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Experiential build &amp; staffing</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Roadshows &amp; activations</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Content capture &amp; amplification</li></ul></div>
-      </div>
-      <div data-scard data-acc="#D62E6A" style="border:1px solid #E1DDD3;background:#FBFAF6;border-radius:6px;padding:clamp(26px,3vw,40px);cursor:pointer;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#D62E6A">04</span><span data-plus style="font-family:'Archivo',sans-serif;font-weight:400;font-size:26px;line-height:1;color:#B7B2A6;transition:transform .45s cubic-bezier(.22,.61,.36,1),color .3s ease">+</span></div>
-        <h3 style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.015em;margin-top:18px">Logistics &amp; site operations</h3>
-        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:12px">Fleet coordination, venue logistics and ground operations for multi-location and remote sites.</p>
-        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><ul style="list-style:none;margin:20px 0 0;padding:20px 0 0;border-top:1px solid #E7E3D9;display:flex;flex-direction:column;gap:11px"><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Fleet &amp; transport coordination</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Venue sourcing &amp; liaison</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Ground operations &amp; site build</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Remote &amp; multi-location delivery</li></ul></div>
-      </div>
-      <div data-scard data-acc="#D62E6A" style="border:1px solid #E1DDD3;background:#FBFAF6;border-radius:6px;padding:clamp(26px,3vw,40px);cursor:pointer;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#D62E6A">05</span><span data-plus style="font-family:'Archivo',sans-serif;font-weight:400;font-size:26px;line-height:1;color:#B7B2A6;transition:transform .45s cubic-bezier(.22,.61,.36,1),color .3s ease">+</span></div>
-        <h3 style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.015em;margin-top:18px">Branded apparel, signage &amp; merchandise</h3>
-        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:12px">In-house design and manufacture of event apparel, signage and corporate gifting through Gallant Branding International.</p>
-        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><ul style="list-style:none;margin:20px 0 0;padding:20px 0 0;border-top:1px solid #E7E3D9;display:flex;flex-direction:column;gap:11px"><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Industrial &amp; event apparel</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Large-format signage &amp; wayfinding</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Corporate gifting &amp; merchandise</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Manufactured in-house, one accountable party</li></ul></div>
-      </div>
-      <div data-scard data-acc="#1E5B3E" style="border:1px solid #E1DDD3;background:#FBFAF6;border-radius:6px;padding:clamp(26px,3vw,40px);cursor:pointer;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#1E5B3E">06</span><span data-plus style="font-family:'Archivo',sans-serif;font-weight:400;font-size:26px;line-height:1;color:#B7B2A6;transition:transform .45s cubic-bezier(.22,.61,.36,1),color .3s ease">+</span></div>
-        <h3 style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.015em;margin-top:18px">Sustainable event solutions</h3>
-        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:12px">Upcycled materials, delegate kits and eco-conscious décor through Gallant Loop Africa.</p>
-        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><ul style="list-style:none;margin:20px 0 0;padding:20px 0 0;border-top:1px solid #E7E3D9;display:flex;flex-direction:column;gap:11px"><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#1E5B3E">—</span>Upcycled delegate kits</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#1E5B3E">—</span>Eco-conscious décor &amp; materials</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#1E5B3E">—</span>Post-event material recovery</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#1E5B3E">—</span>Reportable ESG outcomes</li></ul></div>
-      </div>
-      <div data-scard data-acc="#D62E6A" style="border:1px solid #E1DDD3;background:#FBFAF6;border-radius:6px;padding:clamp(26px,3vw,40px);cursor:pointer;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#D62E6A">07</span><span data-plus style="font-family:'Archivo',sans-serif;font-weight:400;font-size:26px;line-height:1;color:#B7B2A6;transition:transform .45s cubic-bezier(.22,.61,.36,1),color .3s ease">+</span></div>
-        <h3 style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.015em;margin-top:18px">Vendor &amp; supplier management</h3>
-        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:12px">Sourcing, contracting and on-site management of catering, AV, staging and other suppliers.</p>
-        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><ul style="list-style:none;margin:20px 0 0;padding:20px 0 0;border-top:1px solid #E7E3D9;display:flex;flex-direction:column;gap:11px"><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Sourcing &amp; competitive bidding</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Contracting &amp; service levels</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Catering, AV &amp; staging management</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>On-site supplier coordination</li></ul></div>
-      </div>
-      <div data-scard data-acc="#D62E6A" style="border:1px solid #E1DDD3;background:#FBFAF6;border-radius:6px;padding:clamp(26px,3vw,40px);cursor:pointer;transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#D62E6A">08</span><span data-plus style="font-family:'Archivo',sans-serif;font-weight:400;font-size:26px;line-height:1;color:#B7B2A6;transition:transform .45s cubic-bezier(.22,.61,.36,1),color .3s ease">+</span></div>
-        <h3 style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:620;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.015em;margin-top:18px">Financial reporting &amp; compliance</h3>
-        <p style="font-size:15px;line-height:1.7;color:#6B675E;margin-top:12px">Budgeting, payment tracking, supplier reconciliation and audit-ready closeout documentation.</p>
-        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,.61,.36,1),opacity .4s ease"><ul style="list-style:none;margin:20px 0 0;padding:20px 0 0;border-top:1px solid #E7E3D9;display:flex;flex-direction:column;gap:11px"><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Budget build &amp; tracking</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Payment &amp; supplier reconciliation</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Procurement-aligned documentation</li><li style="display:flex;gap:11px;font-size:14px;line-height:1.5;color:#4E4B44"><span style="color:#D62E6A">—</span>Audit-ready closeout reports</li></ul></div>
+      <div style="text-align:left">
+        <div style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.2rem,4vw,3.2rem);letter-spacing:-.03em;line-height:1;color:#14120E">Audit-ready</div>
+        <div style="width:34px;height:3px;background:#D62E6A;margin:16px 0"></div>
+        <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.01em">Closeout on every project</div>
+        <p style="font-size:14.5px;line-height:1.65;color:#6B675E;margin-top:8px;max-width:34ch">Budgets tracked, suppliers reconciled, documentation that satisfies whoever signs off — every single time.</p>
       </div>
     </div>
-    <p data-reveal style="text-align:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#A8A296;margin-top:clamp(28px,3vw,40px)">Tap any service to see what it includes</p>
+  </div>
+</section>
+
+<section style="padding:clamp(48px,6vw,84px) 0 0">
+  <div data-bands data-reveal style="border-top:1px solid rgba(20,18,14,.14)">
+    <div data-band data-acc="#D62E6A" style="position:relative;overflow:hidden;border-bottom:1px solid rgba(20,18,14,.14);cursor:pointer">
+      <div class="band-bg" style="position:absolute;inset:0;z-index:0;transition:transform .6s cubic-bezier(.22,.61,.36,1)"><image-slot id="svc-1" shape="rect" fit="cover" src="https://loremflickr.com/1400/720/event,stage?lock=88" placeholder="Drop a photo" style="width:100%;height:100%;display:block"></image-slot></div>
+      <div data-scrim style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,9,8,.74) 0%,rgba(10,9,8,.34) 55%,rgba(10,9,8,.10) 100%);transition:background .45s ease"></div>
+      <div style="position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:clamp(26px,4vw,56px) clamp(20px,5vw,72px);min-height:clamp(196px,23vw,310px);display:flex;flex-direction:column;justify-content:flex-end">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+          <div style="display:flex;align-items:baseline;gap:clamp(12px,2vw,26px);min-width:0">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:#F4A6C4;flex:none">01</span>
+            <h3 data-title style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(1.6rem,4.4vw,3.4rem);letter-spacing:-.02em;line-height:1;color:#F4F1EA;text-shadow:0 2px 18px rgba(0,0,0,.3)">Event strategy &amp; production</h3>
+          </div>
+          <span data-arrow style="flex:none;width:clamp(42px,4vw,56px);height:clamp(42px,4vw,56px);border:1px solid rgba(255,255,255,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#F4F1EA;transition:transform .45s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease">→</span>
+        </div>
+        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1),opacity .45s ease">
+          <div style="padding-top:clamp(18px,2.2vw,26px);max-width:72ch">
+            <p style="font-size:clamp(15px,1.3vw,17.5px);line-height:1.7;color:#EDEAE2">Concept development, programme design, run of show and end-to-end production management.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px"><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Concept &amp; theme development</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Run-of-show design</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Stage &amp; technical direction</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Production management &amp; crew</span></div>
+            <a data-req href="Gallant Contact.dc.html?service=Event%20strategy%20%26%20production" style="display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:#D62E6A;color:#FFFFFF;font-size:13.5px;font-weight:560;letter-spacing:.01em;padding:13px 24px;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease">Request this service →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-band data-acc="#D62E6A" style="position:relative;overflow:hidden;border-bottom:1px solid rgba(20,18,14,.14);cursor:pointer">
+      <div class="band-bg" style="position:absolute;inset:0;z-index:0;transition:transform .6s cubic-bezier(.22,.61,.36,1)"><image-slot id="svc-2" shape="rect" fit="cover" src="https://loremflickr.com/1400/720/conference,meeting?lock=42" placeholder="Drop a photo" style="width:100%;height:100%;display:block"></image-slot></div>
+      <div data-scrim style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,9,8,.74) 0%,rgba(10,9,8,.34) 55%,rgba(10,9,8,.10) 100%);transition:background .45s ease"></div>
+      <div style="position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:clamp(26px,4vw,56px) clamp(20px,5vw,72px);min-height:clamp(196px,23vw,310px);display:flex;flex-direction:column;justify-content:flex-end">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+          <div style="display:flex;align-items:baseline;gap:clamp(12px,2vw,26px);min-width:0">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:#F4A6C4;flex:none">02</span>
+            <h3 data-title style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(1.6rem,4.4vw,3.4rem);letter-spacing:-.02em;line-height:1;color:#F4F1EA;text-shadow:0 2px 18px rgba(0,0,0,.3)">MICE &amp; conference management</h3>
+          </div>
+          <span data-arrow style="flex:none;width:clamp(42px,4vw,56px);height:clamp(42px,4vw,56px);border:1px solid rgba(255,255,255,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#F4F1EA;transition:transform .45s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease">→</span>
+        </div>
+        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1),opacity .45s ease">
+          <div style="padding-top:clamp(18px,2.2vw,26px);max-width:72ch">
+            <p style="font-size:clamp(15px,1.3vw,17.5px);line-height:1.7;color:#EDEAE2">Meetings, incentives, conferences and exhibitions, including delegate registration, accreditation and protocol.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px"><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Delegate registration &amp; accreditation</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Protocol &amp; VIP handling</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Speaker &amp; session management</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Exhibition &amp; booth coordination</span></div>
+            <a data-req href="Gallant Contact.dc.html?service=MICE%20%26%20conference%20management" style="display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:#D62E6A;color:#FFFFFF;font-size:13.5px;font-weight:560;letter-spacing:.01em;padding:13px 24px;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease">Request this service →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-band data-acc="#D62E6A" style="position:relative;overflow:hidden;border-bottom:1px solid rgba(20,18,14,.14);cursor:pointer">
+      <div class="band-bg" style="position:absolute;inset:0;z-index:0;transition:transform .6s cubic-bezier(.22,.61,.36,1)"><image-slot id="svc-3" shape="rect" fit="cover" src="https://loremflickr.com/1400/720/exhibition,launch?lock=17" placeholder="Drop a photo" style="width:100%;height:100%;display:block"></image-slot></div>
+      <div data-scrim style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,9,8,.74) 0%,rgba(10,9,8,.34) 55%,rgba(10,9,8,.10) 100%);transition:background .45s ease"></div>
+      <div style="position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:clamp(26px,4vw,56px) clamp(20px,5vw,72px);min-height:clamp(196px,23vw,310px);display:flex;flex-direction:column;justify-content:flex-end">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+          <div style="display:flex;align-items:baseline;gap:clamp(12px,2vw,26px);min-width:0">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:#F4A6C4;flex:none">03</span>
+            <h3 data-title style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(1.6rem,4.4vw,3.4rem);letter-spacing:-.02em;line-height:1;color:#F4F1EA;text-shadow:0 2px 18px rgba(0,0,0,.3)">Brand activations &amp; experiences</h3>
+          </div>
+          <span data-arrow style="flex:none;width:clamp(42px,4vw,56px);height:clamp(42px,4vw,56px);border:1px solid rgba(255,255,255,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#F4F1EA;transition:transform .45s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease">→</span>
+        </div>
+        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1),opacity .45s ease">
+          <div style="padding-top:clamp(18px,2.2vw,26px);max-width:72ch">
+            <p style="font-size:clamp(15px,1.3vw,17.5px);line-height:1.7;color:#EDEAE2">Product launches, brand activations and experiential campaigns designed for impact and recall.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px"><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Launch concept &amp; creative</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Experiential build &amp; staffing</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Roadshows &amp; activations</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Content capture &amp; amplification</span></div>
+            <a data-req href="Gallant Contact.dc.html?service=Brand%20activations%20%26%20experiences" style="display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:#D62E6A;color:#FFFFFF;font-size:13.5px;font-weight:560;letter-spacing:.01em;padding:13px 24px;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease">Request this service →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-band data-acc="#D62E6A" style="position:relative;overflow:hidden;border-bottom:1px solid rgba(20,18,14,.14);cursor:pointer">
+      <div class="band-bg" style="position:absolute;inset:0;z-index:0;transition:transform .6s cubic-bezier(.22,.61,.36,1)"><image-slot id="svc-4" shape="rect" fit="cover" src="https://loremflickr.com/1400/720/logistics,truck?lock=63" placeholder="Drop a photo" style="width:100%;height:100%;display:block"></image-slot></div>
+      <div data-scrim style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,9,8,.74) 0%,rgba(10,9,8,.34) 55%,rgba(10,9,8,.10) 100%);transition:background .45s ease"></div>
+      <div style="position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:clamp(26px,4vw,56px) clamp(20px,5vw,72px);min-height:clamp(196px,23vw,310px);display:flex;flex-direction:column;justify-content:flex-end">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+          <div style="display:flex;align-items:baseline;gap:clamp(12px,2vw,26px);min-width:0">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:#F4A6C4;flex:none">04</span>
+            <h3 data-title style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(1.6rem,4.4vw,3.4rem);letter-spacing:-.02em;line-height:1;color:#F4F1EA;text-shadow:0 2px 18px rgba(0,0,0,.3)">Logistics &amp; site operations</h3>
+          </div>
+          <span data-arrow style="flex:none;width:clamp(42px,4vw,56px);height:clamp(42px,4vw,56px);border:1px solid rgba(255,255,255,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#F4F1EA;transition:transform .45s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease">→</span>
+        </div>
+        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1),opacity .45s ease">
+          <div style="padding-top:clamp(18px,2.2vw,26px);max-width:72ch">
+            <p style="font-size:clamp(15px,1.3vw,17.5px);line-height:1.7;color:#EDEAE2">Fleet coordination, venue logistics and ground operations for multi-location and remote sites.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px"><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Fleet &amp; transport coordination</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Venue sourcing &amp; liaison</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Ground operations &amp; site build</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Remote &amp; multi-location delivery</span></div>
+            <a data-req href="Gallant Contact.dc.html?service=Logistics%20%26%20site%20operations" style="display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:#D62E6A;color:#FFFFFF;font-size:13.5px;font-weight:560;letter-spacing:.01em;padding:13px 24px;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease">Request this service →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-band data-acc="#D62E6A" style="position:relative;overflow:hidden;border-bottom:1px solid rgba(20,18,14,.14);cursor:pointer">
+      <div class="band-bg" style="position:absolute;inset:0;z-index:0;transition:transform .6s cubic-bezier(.22,.61,.36,1)"><image-slot id="svc-5" shape="rect" fit="cover" src="https://loremflickr.com/1400/720/printing,apparel?lock=29" placeholder="Drop a photo" style="width:100%;height:100%;display:block"></image-slot></div>
+      <div data-scrim style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,9,8,.74) 0%,rgba(10,9,8,.34) 55%,rgba(10,9,8,.10) 100%);transition:background .45s ease"></div>
+      <div style="position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:clamp(26px,4vw,56px) clamp(20px,5vw,72px);min-height:clamp(196px,23vw,310px);display:flex;flex-direction:column;justify-content:flex-end">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+          <div style="display:flex;align-items:baseline;gap:clamp(12px,2vw,26px);min-width:0">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:#F4A6C4;flex:none">05</span>
+            <h3 data-title style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(1.6rem,4.4vw,3.4rem);letter-spacing:-.02em;line-height:1;color:#F4F1EA;text-shadow:0 2px 18px rgba(0,0,0,.3)">Branded apparel, signage &amp; merchandise</h3>
+          </div>
+          <span data-arrow style="flex:none;width:clamp(42px,4vw,56px);height:clamp(42px,4vw,56px);border:1px solid rgba(255,255,255,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#F4F1EA;transition:transform .45s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease">→</span>
+        </div>
+        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1),opacity .45s ease">
+          <div style="padding-top:clamp(18px,2.2vw,26px);max-width:72ch">
+            <p style="font-size:clamp(15px,1.3vw,17.5px);line-height:1.7;color:#EDEAE2">In-house design and manufacture of event apparel, signage and corporate gifting through Gallant Branding International.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px"><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Industrial &amp; event apparel</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Large-format signage &amp; wayfinding</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Corporate gifting &amp; merchandise</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Manufactured in-house</span></div>
+            <a data-req href="Gallant Contact.dc.html?service=Branded%20apparel%2C%20signage%20%26%20merchandise" style="display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:#D62E6A;color:#FFFFFF;font-size:13.5px;font-weight:560;letter-spacing:.01em;padding:13px 24px;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease">Request this service →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-band data-acc="#1E5B3E" style="position:relative;overflow:hidden;border-bottom:1px solid rgba(20,18,14,.14);cursor:pointer">
+      <div class="band-bg" style="position:absolute;inset:0;z-index:0;transition:transform .6s cubic-bezier(.22,.61,.36,1)"><image-slot id="svc-6" shape="rect" fit="cover" src="https://loremflickr.com/1400/720/recycling,sustainability?lock=51" placeholder="Drop a photo" style="width:100%;height:100%;display:block"></image-slot></div>
+      <div data-scrim style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,9,8,.74) 0%,rgba(10,9,8,.34) 55%,rgba(10,9,8,.10) 100%);transition:background .45s ease"></div>
+      <div style="position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:clamp(26px,4vw,56px) clamp(20px,5vw,72px);min-height:clamp(196px,23vw,310px);display:flex;flex-direction:column;justify-content:flex-end">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+          <div style="display:flex;align-items:baseline;gap:clamp(12px,2vw,26px);min-width:0">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:#8FD3AE;flex:none">06</span>
+            <h3 data-title style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(1.6rem,4.4vw,3.4rem);letter-spacing:-.02em;line-height:1;color:#F4F1EA;text-shadow:0 2px 18px rgba(0,0,0,.3)">Sustainable event solutions</h3>
+          </div>
+          <span data-arrow style="flex:none;width:clamp(42px,4vw,56px);height:clamp(42px,4vw,56px);border:1px solid rgba(255,255,255,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#F4F1EA;transition:transform .45s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease">→</span>
+        </div>
+        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1),opacity .45s ease">
+          <div style="padding-top:clamp(18px,2.2vw,26px);max-width:72ch">
+            <p style="font-size:clamp(15px,1.3vw,17.5px);line-height:1.7;color:#EDEAE2">Upcycled materials, delegate kits and eco-conscious décor through Gallant Loop Africa.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px"><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Upcycled delegate kits</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Eco-conscious décor</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Post-event material recovery</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Reportable ESG outcomes</span></div>
+            <a data-req href="Gallant Contact.dc.html?service=Sustainable%20event%20solutions" style="display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:#1E5B3E;color:#FFFFFF;font-size:13.5px;font-weight:560;letter-spacing:.01em;padding:13px 24px;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease">Request this service →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-band data-acc="#D62E6A" style="position:relative;overflow:hidden;border-bottom:1px solid rgba(20,18,14,.14);cursor:pointer">
+      <div class="band-bg" style="position:absolute;inset:0;z-index:0;transition:transform .6s cubic-bezier(.22,.61,.36,1)"><image-slot id="svc-7" shape="rect" fit="cover" src="https://loremflickr.com/1400/720/catering,banquet?lock=74" placeholder="Drop a photo" style="width:100%;height:100%;display:block"></image-slot></div>
+      <div data-scrim style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,9,8,.74) 0%,rgba(10,9,8,.34) 55%,rgba(10,9,8,.10) 100%);transition:background .45s ease"></div>
+      <div style="position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:clamp(26px,4vw,56px) clamp(20px,5vw,72px);min-height:clamp(196px,23vw,310px);display:flex;flex-direction:column;justify-content:flex-end">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+          <div style="display:flex;align-items:baseline;gap:clamp(12px,2vw,26px);min-width:0">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:#F4A6C4;flex:none">07</span>
+            <h3 data-title style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(1.6rem,4.4vw,3.4rem);letter-spacing:-.02em;line-height:1;color:#F4F1EA;text-shadow:0 2px 18px rgba(0,0,0,.3)">Vendor &amp; supplier management</h3>
+          </div>
+          <span data-arrow style="flex:none;width:clamp(42px,4vw,56px);height:clamp(42px,4vw,56px);border:1px solid rgba(255,255,255,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#F4F1EA;transition:transform .45s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease">→</span>
+        </div>
+        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1),opacity .45s ease">
+          <div style="padding-top:clamp(18px,2.2vw,26px);max-width:72ch">
+            <p style="font-size:clamp(15px,1.3vw,17.5px);line-height:1.7;color:#EDEAE2">Sourcing, contracting and on-site management of catering, AV, staging and other suppliers.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px"><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Sourcing &amp; competitive bidding</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Contracting &amp; service levels</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Catering, AV &amp; staging</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">On-site supplier coordination</span></div>
+            <a data-req href="Gallant Contact.dc.html?service=Vendor%20%26%20supplier%20management" style="display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:#D62E6A;color:#FFFFFF;font-size:13.5px;font-weight:560;letter-spacing:.01em;padding:13px 24px;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease">Request this service →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-band data-acc="#D62E6A" style="position:relative;overflow:hidden;border-bottom:1px solid rgba(20,18,14,.14);cursor:pointer">
+      <div class="band-bg" style="position:absolute;inset:0;z-index:0;transition:transform .6s cubic-bezier(.22,.61,.36,1)"><image-slot id="svc-8" shape="rect" fit="cover" src="https://loremflickr.com/1400/720/office,finance?lock=36" placeholder="Drop a photo" style="width:100%;height:100%;display:block"></image-slot></div>
+      <div data-scrim style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,9,8,.74) 0%,rgba(10,9,8,.34) 55%,rgba(10,9,8,.10) 100%);transition:background .45s ease"></div>
+      <div style="position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:clamp(26px,4vw,56px) clamp(20px,5vw,72px);min-height:clamp(196px,23vw,310px);display:flex;flex-direction:column;justify-content:flex-end">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+          <div style="display:flex;align-items:baseline;gap:clamp(12px,2vw,26px);min-width:0">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:#F4A6C4;flex:none">08</span>
+            <h3 data-title style="font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:640;font-size:clamp(1.6rem,4.4vw,3.4rem);letter-spacing:-.02em;line-height:1;color:#F4F1EA;text-shadow:0 2px 18px rgba(0,0,0,.3)">Financial reporting &amp; compliance</h3>
+          </div>
+          <span data-arrow style="flex:none;width:clamp(42px,4vw,56px);height:clamp(42px,4vw,56px);border:1px solid rgba(255,255,255,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#F4F1EA;transition:transform .45s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease">→</span>
+        </div>
+        <div data-detail style="max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.22,.61,.36,1),opacity .45s ease">
+          <div style="padding-top:clamp(18px,2.2vw,26px);max-width:72ch">
+            <p style="font-size:clamp(15px,1.3vw,17.5px);line-height:1.7;color:#EDEAE2">Budgeting, payment tracking, supplier reconciliation and audit-ready closeout documentation.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px"><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Budget build &amp; tracking</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Payment &amp; supplier reconciliation</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Procurement-aligned documentation</span><span style="font-size:13px;color:#F4F1EA;border:1px solid rgba(255,255,255,.34);border-radius:100px;padding:8px 15px">Audit-ready closeout reports</span></div>
+            <a data-req href="Gallant Contact.dc.html?service=Financial%20reporting%20%26%20compliance" style="display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:#D62E6A;color:#FFFFFF;font-size:13.5px;font-weight:560;letter-spacing:.01em;padding:13px 24px;border-radius:100px;transition:transform .3s ease,box-shadow .3s ease">Request this service →</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section style="padding:clamp(96px,13vw,160px) clamp(20px,5vw,72px)">
-  <div style="max-width:1080px;margin:0 auto;text-align:center">
+  <div style="max-width:1080px;margin:0 auto">
+    <div style="text-align:center">
     <div data-reveal style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#D62E6A;display:none">How we work</div>
     <h2 data-reveal style="font-family:'Archivo',sans-serif;font-stretch:116%;font-weight:640;font-size:clamp(1.8rem,3.4vw,3rem);letter-spacing:-.02em;line-height:1.06;margin:clamp(16px,2.4vw,26px) auto 0;max-width:20ch">One engagement model, concept to closeout.</h2>
-    <div data-proc data-reveal style="display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(24px,2.8vw,44px);margin-top:clamp(64px,8vw,100px);text-align:left">
-      <div data-step style="position:relative;padding-top:46px;border-top:2px solid #E1DDD3;transition:border-color .4s ease">
-        <div data-sn style="position:absolute;top:-30px;left:0;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:-.03em;color:#E1DDD3;transition:color .4s ease">01</div>
-        <div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(16px,1.5vw,19px);letter-spacing:-.01em">Scope &amp; strategy</div>
-        <p style="font-size:14px;line-height:1.65;color:#6B675E;margin-top:10px">A clear scope, objectives and budget, aligned to a procurement framework or a marketing brief.</p>
+    </div>
+    <div data-proc data-reveal style="margin-top:clamp(52px,6vw,84px);border-top:1px solid #E1DDD3">
+      <div data-step style="display:grid;grid-template-columns:120px 1fr;gap:clamp(20px,4vw,60px);align-items:baseline;padding:clamp(26px,3.4vw,42px) 0;border-bottom:1px solid #E1DDD3;transition:padding-left .4s ease">
+        <div data-sn style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.4rem,4.4vw,3.6rem);letter-spacing:-.03em;color:#DAD5C9;line-height:.9;transition:color .4s ease">01</div>
+        <div style="max-width:60ch"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(19px,2vw,26px);letter-spacing:-.015em">Scope &amp; strategy</div><p style="font-size:clamp(15px,1.3vw,17px);line-height:1.7;color:#6B675E;margin-top:10px">A clear scope, objectives and budget, aligned to a procurement framework or a marketing brief.</p></div>
       </div>
-      <div data-step style="position:relative;padding-top:46px;border-top:2px solid #E1DDD3;transition:border-color .4s ease">
-        <div data-sn style="position:absolute;top:-30px;left:0;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:-.03em;color:#E1DDD3;transition:color .4s ease">02</div>
-        <div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(16px,1.5vw,19px);letter-spacing:-.01em">Design &amp; production</div>
-        <p style="font-size:14px;line-height:1.65;color:#6B675E;margin-top:10px">Programme design, run of show, and in-house manufacture of branding, apparel and signage through Gallant Branding International.</p>
+      <div data-step style="display:grid;grid-template-columns:120px 1fr;gap:clamp(20px,4vw,60px);align-items:baseline;padding:clamp(26px,3.4vw,42px) 0;border-bottom:1px solid #E1DDD3;transition:padding-left .4s ease">
+        <div data-sn style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.4rem,4.4vw,3.6rem);letter-spacing:-.03em;color:#DAD5C9;line-height:.9;transition:color .4s ease">02</div>
+        <div style="max-width:60ch"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(19px,2vw,26px);letter-spacing:-.015em">Design &amp; production</div><p style="font-size:clamp(15px,1.3vw,17px);line-height:1.7;color:#6B675E;margin-top:10px">Programme design, run of show, and in-house manufacture of branding, apparel and signage through Gallant Branding International.</p></div>
       </div>
-      <div data-step style="position:relative;padding-top:46px;border-top:2px solid #E1DDD3;transition:border-color .4s ease">
-        <div data-sn style="position:absolute;top:-30px;left:0;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:-.03em;color:#E1DDD3;transition:color .4s ease">03</div>
-        <div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(16px,1.5vw,19px);letter-spacing:-.01em">Logistics &amp; mobilisation</div>
-        <p style="font-size:14px;line-height:1.65;color:#6B675E;margin-top:10px">Fleet, venue and supplier coordination, including multi-location and remote-site operations.</p>
+      <div data-step style="display:grid;grid-template-columns:120px 1fr;gap:clamp(20px,4vw,60px);align-items:baseline;padding:clamp(26px,3.4vw,42px) 0;border-bottom:1px solid #E1DDD3;transition:padding-left .4s ease">
+        <div data-sn style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.4rem,4.4vw,3.6rem);letter-spacing:-.03em;color:#DAD5C9;line-height:.9;transition:color .4s ease">03</div>
+        <div style="max-width:60ch"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(19px,2vw,26px);letter-spacing:-.015em">Logistics &amp; mobilisation</div><p style="font-size:clamp(15px,1.3vw,17px);line-height:1.7;color:#6B675E;margin-top:10px">Fleet, venue and supplier coordination, including multi-location and remote-site operations.</p></div>
       </div>
-      <div data-step style="position:relative;padding-top:46px;border-top:2px solid #E1DDD3;transition:border-color .4s ease">
-        <div data-sn style="position:absolute;top:-30px;left:0;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:-.03em;color:#E1DDD3;transition:color .4s ease">04</div>
-        <div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(16px,1.5vw,19px);letter-spacing:-.01em">On-site execution</div>
-        <p style="font-size:14px;line-height:1.65;color:#6B675E;margin-top:10px">A dedicated team runs the programme to plan, with protocol, accreditation and brand presence handled on the ground.</p>
+      <div data-step style="display:grid;grid-template-columns:120px 1fr;gap:clamp(20px,4vw,60px);align-items:baseline;padding:clamp(26px,3.4vw,42px) 0;border-bottom:1px solid #E1DDD3;transition:padding-left .4s ease">
+        <div data-sn style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.4rem,4.4vw,3.6rem);letter-spacing:-.03em;color:#DAD5C9;line-height:.9;transition:color .4s ease">04</div>
+        <div style="max-width:60ch"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(19px,2vw,26px);letter-spacing:-.015em">On-site execution</div><p style="font-size:clamp(15px,1.3vw,17px);line-height:1.7;color:#6B675E;margin-top:10px">A dedicated team runs the programme to plan, with protocol, accreditation and brand presence handled on the ground.</p></div>
       </div>
-      <div data-step style="position:relative;padding-top:46px;border-top:2px solid #E1DDD3;transition:border-color .4s ease">
-        <div data-sn style="position:absolute;top:-30px;left:0;font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(1.6rem,2.6vw,2.4rem);letter-spacing:-.03em;color:#E1DDD3;transition:color .4s ease">05</div>
-        <div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(16px,1.5vw,19px);letter-spacing:-.01em">Closeout &amp; reporting</div>
-        <p style="font-size:14px;line-height:1.65;color:#6B675E;margin-top:10px">Audit-ready reconciliation and documentation, plus upcycling of post-event materials through Gallant Loop Africa.</p>
+      <div data-step style="display:grid;grid-template-columns:120px 1fr;gap:clamp(20px,4vw,60px);align-items:baseline;padding:clamp(26px,3.4vw,42px) 0;border-bottom:1px solid #E1DDD3;transition:padding-left .4s ease">
+        <div data-sn style="font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:720;font-size:clamp(2.4rem,4.4vw,3.6rem);letter-spacing:-.03em;color:#DAD5C9;line-height:.9;transition:color .4s ease">05</div>
+        <div style="max-width:60ch"><div style="font-family:'Archivo',sans-serif;font-stretch:114%;font-weight:600;font-size:clamp(19px,2vw,26px);letter-spacing:-.015em">Closeout &amp; reporting</div><p style="font-size:clamp(15px,1.3vw,17px);line-height:1.7;color:#6B675E;margin-top:10px">Audit-ready reconciliation and documentation, plus upcycling of post-event materials through Gallant Loop Africa.</p></div>
       </div>
     </div>
     <div data-reveal style="margin-top:clamp(44px,6vw,64px)"><a href="Gallant Contact.dc.html" style="display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:17px 36px;background:#14120E;color:#F4F1EA;border-radius:100px;transition:transform .3s ease" style-hover="transform:translateY(-3px)">Contact us →</a></div>
@@ -173,27 +307,60 @@ class Component extends DCLogic {
       reveals.forEach(e => io.observe(e));
       setTimeout(() => reveals.forEach(e => { if (e.getAttribute('data-reveal') !== 'in') e.setAttribute('data-reveal', 'in'); }), 2600);
     }
-    document.querySelectorAll('[data-scard]').forEach(cd => {
-      const plus = cd.querySelector('[data-plus]');
-      const detail = cd.querySelector('[data-detail]');
-      const acc = cd.getAttribute('data-acc') || '#D62E6A';
+    const baseScrim = 'linear-gradient(90deg,rgba(10,9,8,.74) 0%,rgba(10,9,8,.34) 55%,rgba(10,9,8,.10) 100%)';
+    const openScrim = 'linear-gradient(90deg,rgba(10,9,8,.92) 0%,rgba(10,9,8,.66) 60%,rgba(10,9,8,.42) 100%)';
+    const bands = Array.from(document.querySelectorAll('[data-band]'));
+    bands.forEach(band => {
+      const detail = band.querySelector('[data-detail]');
+      const arrow = band.querySelector('[data-arrow]');
+      const scrim = band.querySelector('[data-scrim]');
+      const bg = band.querySelector('.band-bg');
+      const acc = band.getAttribute('data-acc') || '#D62E6A';
       let open = false;
       const setOpen = (v) => {
         open = v;
         if (detail) { detail.style.maxHeight = v ? detail.scrollHeight + 'px' : '0'; detail.style.opacity = v ? '1' : '0'; }
-        if (plus) { plus.style.transform = v ? 'rotate(135deg)' : 'none'; plus.style.color = v ? acc : '#B7B2A6'; }
+        if (arrow) { arrow.style.transform = v ? 'rotate(90deg)' : 'none'; arrow.style.background = v ? acc : 'transparent'; arrow.style.borderColor = v ? acc : 'rgba(255,255,255,.55)'; }
+        if (scrim) scrim.style.background = v ? openScrim : baseScrim;
+        if (bg) bg.style.transform = v ? 'scale(1.05)' : 'scale(1)';
       };
-      cd.addEventListener('click', () => setOpen(!open));
-      cd.addEventListener('mouseenter', () => { cd.style.transform = 'translateY(-6px)'; cd.style.boxShadow = '0 22px 48px rgba(20,18,14,.10)'; cd.style.borderColor = '#CFC9BC'; if (plus && !open) plus.style.color = acc; });
-      cd.addEventListener('mouseleave', () => { cd.style.transform = 'none'; cd.style.boxShadow = 'none'; cd.style.borderColor = '#E1DDD3'; if (plus && !open) plus.style.color = '#B7B2A6'; });
+      band.addEventListener('click', () => {
+        bands.forEach(b => { if (b !== band && b.__close) b.__close(); });
+        setOpen(!open);
+      });
+      band.__close = () => setOpen(false);
+      band.__open = () => setOpen(true);
+      const req = band.querySelector('[data-req]');
+      if (req) {
+        req.addEventListener('click', (e) => e.stopPropagation());
+        req.addEventListener('mouseenter', () => { req.style.transform = 'translateY(-2px)'; req.style.boxShadow = '0 12px 26px rgba(0,0,0,.28)'; });
+        req.addEventListener('mouseleave', () => { req.style.transform = 'none'; req.style.boxShadow = 'none'; });
+      }
+      band.addEventListener('mouseenter', () => { if (!open) { if (bg) bg.style.transform = 'scale(1.03)'; if (arrow) { arrow.style.background = acc; arrow.style.borderColor = acc; } } });
+      band.addEventListener('mouseleave', () => { if (!open) { if (bg) bg.style.transform = 'scale(1)'; if (arrow) { arrow.style.background = 'transparent'; arrow.style.borderColor = 'rgba(255,255,255,.55)'; } } });
     });
     window.addEventListener('resize', () => {
       document.querySelectorAll('[data-detail]').forEach(d => { if (d.style.maxHeight && d.style.maxHeight !== '0px') d.style.maxHeight = d.scrollHeight + 'px'; });
     });
+    // open the band matching the URL hash (#svc-N) coming from the nav dropdown
+    const openFromHash = () => {
+      const id = (location.hash || '').replace('#', '');
+      if (!id) return;
+      const slot = document.getElementById(id);
+      const target = slot && slot.closest('[data-band]');
+      if (target) {
+        bands.forEach(b => { if (b !== target && b.__close) b.__close(); });
+        if (target.__open) target.__open();
+        const y = target.getBoundingClientRect().top + window.scrollY - 70;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    };
+    setTimeout(openFromHash, 400);
+    window.addEventListener('hashchange', openFromHash);
     document.querySelectorAll('[data-step]').forEach(s => {
       const sn = s.querySelector('[data-sn]');
-      s.addEventListener('mouseenter', () => { s.style.borderTopColor = '#14120E'; if (sn) sn.style.color = '#14120E'; });
-      s.addEventListener('mouseleave', () => { s.style.borderTopColor = '#E1DDD3'; if (sn) sn.style.color = '#E1DDD3'; });
+      s.addEventListener('mouseenter', () => { s.style.paddingLeft = '12px'; if (sn) sn.style.color = '#D62E6A'; });
+      s.addEventListener('mouseleave', () => { s.style.paddingLeft = '0'; if (sn) sn.style.color = '#DAD5C9'; });
     });
   }
   renderVals() { return {}; }
