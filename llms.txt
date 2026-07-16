@@ -29,8 +29,8 @@ Public and private institutions including the Executive Office of the President,
 
 ## Pages
 - Home: https://www.gallant-group.com/
-- The Group: https://www.gallant-group.com/Gallant%20Group.dc.html
-- Services: https://www.gallant-group.com/Gallant%20Services.dc.html
-- Divisions: https://www.gallant-group.com/Gallant%20Divisions.dc.html
-- Contact: https://www.gallant-group.com/Gallant%20Contact.dc.html
-- Brand guidelines: https://www.gallant-group.com/Gallant%20Brand.dc.html
+- The Group: https://www.gallant-group.com/group/
+- Services: https://www.gallant-group.com/services/
+- Divisions: https://www.gallant-group.com/divisions/
+- Contact: https://www.gallant-group.com/contact/
+- Brand guidelines: https://www.gallant-group.com/brand/
